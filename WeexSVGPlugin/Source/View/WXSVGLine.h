@@ -6,8 +6,7 @@
 //
 //
 
-#import <WeexSDK/WeexSDK.h>
-#import "WXSVGRenderable.h"
+#import <WeexSVGPlugin/WeexSVGPlugin.h>
 
 @interface WXSVGLine : WXSVGRenderable
 

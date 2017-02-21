@@ -6,14 +6,10 @@
 //
 //
 
-#import <WeexSDK/WeexSDK.h>
-#import "WXSVGRenderableComponent.h"
+#import <WeexSVGPlugin/WeexSVGPlugin.h>
 
 @interface WXSVGLineComponent : WXSVGRenderableComponent
 
-@property (nonatomic, copy) NSString *x1;
-@property (nonatomic, copy) NSString *y1;
-@property (nonatomic, copy) NSString *x2;
-@property (nonatomic, copy) NSString *y2;
+
 
 @end

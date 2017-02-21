@@ -7,6 +7,7 @@
 //
 
 #import "WXSVGRenderableComponent.h"
+#import "WXConvert+WXSVG.h"
 
 @implementation WXSVGRenderableComponent
 @synthesize attributes = _attributes;
@@ -21,7 +22,6 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        _strokeWidth = [attributes[@"strokeWidth"] floatValue];
         if (!_attributes) {
             _attributes = [NSDictionary dictionaryWithDictionary:attributes];
         }
@@ -34,7 +34,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    WXSVGRenderable *renderableView = (WXSVGRenderable *)self.view;
+    if (_attributes[@"strokeWidth"]) {
+        renderableView.strokeWidth = [_attributes[@"strokeWidth"] floatValue];
+    }
+    if (_attributes[@"stroke"]) {
+        renderableView.stroke = [WXConvert WXSVGBrush:@[@(0),@(0),@(0),@(0),@(1)]];
+    }
+    if (_attributes[@"fill"]) {
+        renderableView.fill = [WXConvert WXSVGBrush:@[@(0),@(255),@(0),@(0),@(1)]];
+    }
+    renderableView.strokeMiterlimit = 4;
 }
 
 /*

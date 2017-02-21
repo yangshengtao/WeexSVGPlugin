@@ -6,7 +6,6 @@
 //
 //
 
-#import <WeexSDK/WeexSDK.h>
 #import "WXSVGNode.h"
 #import "WXSVGBrush.h"
 

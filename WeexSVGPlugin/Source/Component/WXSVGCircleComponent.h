@@ -6,7 +6,6 @@
 //
 //
 
-#import <WeexSDK/WeexSDK.h>
 #import "WXSVGRenderableComponent.h"
 
 @interface WXSVGCircleComponent : WXSVGRenderableComponent

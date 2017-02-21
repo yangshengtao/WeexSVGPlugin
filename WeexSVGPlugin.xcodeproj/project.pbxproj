@@ -45,6 +45,8 @@
 		0AA9892D1E5BE87D00D5E065 /* WXSVGSvgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA9890A1E5BE87D00D5E065 /* WXSVGSvgView.h */; };
 		0AA9892E1E5BE87D00D5E065 /* WXSVGSvgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA9890B1E5BE87D00D5E065 /* WXSVGSvgView.m */; };
 		0AA9892F1E5BE87D00D5E065 /* WXSVGContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA9890C1E5BE87D00D5E065 /* WXSVGContainer.h */; };
+		34136B08F621E224CE5AADE8 /* libPods-WeexSVGPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2DFB3A777123AD5D05FE41 /* libPods-WeexSVGPlugin.a */; };
+		83E1FC2FA58F7DB4DDC923AB /* libPods-WeexSVGPluginTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A530AF16CA737D2CD82583 /* libPods-WeexSVGPluginTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,12 @@
 		0AA9890A1E5BE87D00D5E065 /* WXSVGSvgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGSvgView.h; sourceTree = "<group>"; };
 		0AA9890B1E5BE87D00D5E065 /* WXSVGSvgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGSvgView.m; sourceTree = "<group>"; };
 		0AA9890C1E5BE87D00D5E065 /* WXSVGContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGContainer.h; sourceTree = "<group>"; };
+		0D2DFB3A777123AD5D05FE41 /* libPods-WeexSVGPlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexSVGPlugin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B57E5ED37F6186C847039F2 /* Pods-WeexSVGPluginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexSVGPluginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexSVGPluginTests/Pods-WeexSVGPluginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70A530AF16CA737D2CD82583 /* libPods-WeexSVGPluginTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexSVGPluginTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2C137B2D001DBF58B914B1 /* Pods-WeexSVGPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexSVGPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexSVGPlugin/Pods-WeexSVGPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		D55EB56264920428CE6BBF02 /* Pods-WeexSVGPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexSVGPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexSVGPlugin/Pods-WeexSVGPlugin.release.xcconfig"; sourceTree = "<group>"; };
+		EB2C61CBE584697D028D2693 /* Pods-WeexSVGPluginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexSVGPluginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexSVGPluginTests/Pods-WeexSVGPluginTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34136B08F621E224CE5AADE8 /* libPods-WeexSVGPlugin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA988D51E5BE84300D5E065 /* WeexSVGPlugin.framework in Frameworks */,
+				83E1FC2FA58F7DB4DDC923AB /* libPods-WeexSVGPluginTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +136,8 @@
 				0AA988CD1E5BE84300D5E065 /* WeexSVGPlugin */,
 				0AA988D81E5BE84300D5E065 /* WeexSVGPluginTests */,
 				0AA988CC1E5BE84300D5E065 /* Products */,
+				87C11ADD593D35CEF5A5B8D4 /* Pods */,
+				D4A01F861583F300F12AA8F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +243,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		87C11ADD593D35CEF5A5B8D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B2C137B2D001DBF58B914B1 /* Pods-WeexSVGPlugin.debug.xcconfig */,
+				D55EB56264920428CE6BBF02 /* Pods-WeexSVGPlugin.release.xcconfig */,
+				1B57E5ED37F6186C847039F2 /* Pods-WeexSVGPluginTests.debug.xcconfig */,
+				EB2C61CBE584697D028D2693 /* Pods-WeexSVGPluginTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4A01F861583F300F12AA8F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D2DFB3A777123AD5D05FE41 /* libPods-WeexSVGPlugin.a */,
+				70A530AF16CA737D2CD82583 /* libPods-WeexSVGPluginTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -267,10 +299,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AA988DF1E5BE84300D5E065 /* Build configuration list for PBXNativeTarget "WeexSVGPlugin" */;
 			buildPhases = (
+				1998BDF1B06FE320336BDB5E /* [CP] Check Pods Manifest.lock */,
 				0AA988C61E5BE84300D5E065 /* Sources */,
 				0AA988C71E5BE84300D5E065 /* Frameworks */,
 				0AA988C81E5BE84300D5E065 /* Headers */,
 				0AA988C91E5BE84300D5E065 /* Resources */,
+				EAC38CCD4E65C91C9FF8D415 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,9 +319,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AA988E21E5BE84300D5E065 /* Build configuration list for PBXNativeTarget "WeexSVGPluginTests" */;
 			buildPhases = (
+				8B161B67CD7D4731F9729216 /* [CP] Check Pods Manifest.lock */,
 				0AA988D01E5BE84300D5E065 /* Sources */,
 				0AA988D11E5BE84300D5E065 /* Frameworks */,
 				0AA988D21E5BE84300D5E065 /* Resources */,
+				5C397968DB32396E396FDF4A /* [CP] Embed Pods Frameworks */,
+				B69F84D84791B8829E9E4E02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,6 +389,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1998BDF1B06FE320336BDB5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C397968DB32396E396FDF4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexSVGPluginTests/Pods-WeexSVGPluginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B161B67CD7D4731F9729216 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B69F84D84791B8829E9E4E02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexSVGPluginTests/Pods-WeexSVGPluginTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC38CCD4E65C91C9FF8D415 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexSVGPlugin/Pods-WeexSVGPlugin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AA988C61E5BE84300D5E065 /* Sources */ = {
@@ -495,6 +610,7 @@
 		};
 		0AA988E01E5BE84300D5E065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B2C137B2D001DBF58B914B1 /* Pods-WeexSVGPlugin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -512,6 +628,7 @@
 		};
 		0AA988E11E5BE84300D5E065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55EB56264920428CE6BBF02 /* Pods-WeexSVGPlugin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -529,6 +646,7 @@
 		};
 		0AA988E31E5BE84300D5E065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B57E5ED37F6186C847039F2 /* Pods-WeexSVGPluginTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WeexSVGPluginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -539,6 +657,7 @@
 		};
 		0AA988E41E5BE84300D5E065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2C61CBE584697D028D2693 /* Pods-WeexSVGPluginTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WeexSVGPluginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

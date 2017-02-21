@@ -38,13 +38,15 @@
     return [self node];
 }
 
-/*
+
 - (void)viewDidLoad
 {
-    
+    [super viewDidLoad];
+    WXSVGNode *SVGView = (WXSVGNode *)self.view;
+    SVGView.matrix = CGAffineTransformMake(1, 0, 0, 1, 0, 0);
 }
 
-
+/*
 - (void)insertSubview:(WXComponent *)subcomponent atIndex:(NSInteger)index
 {
     [super insertSubview:subcomponent atIndex:index];
