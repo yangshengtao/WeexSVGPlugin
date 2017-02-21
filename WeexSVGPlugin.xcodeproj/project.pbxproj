@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AA988D51E5BE84300D5E065 /* WeexSVGPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA988CB1E5BE84300D5E065 /* WeexSVGPlugin.framework */; };
+		0AA988DA1E5BE84300D5E065 /* WeexSVGPluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988D91E5BE84300D5E065 /* WeexSVGPluginTests.m */; };
+		0AA988DC1E5BE84300D5E065 /* WeexSVGPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988CE1E5BE84300D5E065 /* WeexSVGPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AA9890D1E5BE87D00D5E065 /* WXSVGBaseBrush.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988E71E5BE87D00D5E065 /* WXSVGBaseBrush.h */; };
+		0AA9890E1E5BE87D00D5E065 /* WXSVGBaseBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988E81E5BE87D00D5E065 /* WXSVGBaseBrush.m */; };
+		0AA9890F1E5BE87D00D5E065 /* WXSVGBrush.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988E91E5BE87D00D5E065 /* WXSVGBrush.h */; };
+		0AA989101E5BE87D00D5E065 /* WXSVGBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988EA1E5BE87D00D5E065 /* WXSVGBrush.m */; };
+		0AA989111E5BE87D00D5E065 /* WXSVGBrushConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988EB1E5BE87D00D5E065 /* WXSVGBrushConverter.h */; };
+		0AA989121E5BE87D00D5E065 /* WXSVGBrushConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988EC1E5BE87D00D5E065 /* WXSVGBrushConverter.m */; };
+		0AA989131E5BE87D00D5E065 /* WXSVGSolidColorBrush.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988ED1E5BE87D00D5E065 /* WXSVGSolidColorBrush.h */; };
+		0AA989141E5BE87D00D5E065 /* WXSVGSolidColorBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988EE1E5BE87D00D5E065 /* WXSVGSolidColorBrush.m */; };
+		0AA989151E5BE87D00D5E065 /* WXSVGCircleComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F01E5BE87D00D5E065 /* WXSVGCircleComponent.h */; };
+		0AA989161E5BE87D00D5E065 /* WXSVGCircleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F11E5BE87D00D5E065 /* WXSVGCircleComponent.m */; };
+		0AA989171E5BE87D00D5E065 /* WXSVGComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F21E5BE87D00D5E065 /* WXSVGComponent.h */; };
+		0AA989181E5BE87D00D5E065 /* WXSVGComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F31E5BE87D00D5E065 /* WXSVGComponent.m */; };
+		0AA989191E5BE87D00D5E065 /* WXSVGLineComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F41E5BE87D00D5E065 /* WXSVGLineComponent.h */; };
+		0AA9891A1E5BE87D00D5E065 /* WXSVGLineComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F51E5BE87D00D5E065 /* WXSVGLineComponent.m */; };
+		0AA9891B1E5BE87D00D5E065 /* WXSVGNodeComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F61E5BE87D00D5E065 /* WXSVGNodeComponent.h */; };
+		0AA9891C1E5BE87D00D5E065 /* WXSVGNodeComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F71E5BE87D00D5E065 /* WXSVGNodeComponent.m */; };
+		0AA9891D1E5BE87D00D5E065 /* WXSVGRenderableComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F81E5BE87D00D5E065 /* WXSVGRenderableComponent.h */; };
+		0AA9891E1E5BE87D00D5E065 /* WXSVGRenderableComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F91E5BE87D00D5E065 /* WXSVGRenderableComponent.m */; };
+		0AA9891F1E5BE87D00D5E065 /* WXConvert+WXSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988FB1E5BE87D00D5E065 /* WXConvert+WXSVG.h */; };
+		0AA989201E5BE87D00D5E065 /* WXConvert+WXSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988FC1E5BE87D00D5E065 /* WXConvert+WXSVG.m */; };
+		0AA989211E5BE87D00D5E065 /* WXSVGPathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988FD1E5BE87D00D5E065 /* WXSVGPathParser.h */; };
+		0AA989221E5BE87D00D5E065 /* WXSVGPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988FE1E5BE87D00D5E065 /* WXSVGPathParser.m */; };
+		0AA989231E5BE87D00D5E065 /* WXSVGPercentageConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988FF1E5BE87D00D5E065 /* WXSVGPercentageConverter.h */; };
+		0AA989241E5BE87D00D5E065 /* WXSVGPercentageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA989001E5BE87D00D5E065 /* WXSVGPercentageConverter.m */; };
+		0AA989251E5BE87D00D5E065 /* WXSVGCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA989021E5BE87D00D5E065 /* WXSVGCircle.h */; };
+		0AA989261E5BE87D00D5E065 /* WXSVGCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA989031E5BE87D00D5E065 /* WXSVGCircle.m */; };
+		0AA989271E5BE87D00D5E065 /* WXSVGLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA989041E5BE87D00D5E065 /* WXSVGLine.h */; };
+		0AA989281E5BE87D00D5E065 /* WXSVGLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA989051E5BE87D00D5E065 /* WXSVGLine.m */; };
+		0AA989291E5BE87D00D5E065 /* WXSVGNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA989061E5BE87D00D5E065 /* WXSVGNode.h */; };
+		0AA9892A1E5BE87D00D5E065 /* WXSVGNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA989071E5BE87D00D5E065 /* WXSVGNode.m */; };
+		0AA9892B1E5BE87D00D5E065 /* WXSVGRenderable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA989081E5BE87D00D5E065 /* WXSVGRenderable.h */; };
+		0AA9892C1E5BE87D00D5E065 /* WXSVGRenderable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA989091E5BE87D00D5E065 /* WXSVGRenderable.m */; };
+		0AA9892D1E5BE87D00D5E065 /* WXSVGSvgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA9890A1E5BE87D00D5E065 /* WXSVGSvgView.h */; };
+		0AA9892E1E5BE87D00D5E065 /* WXSVGSvgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA9890B1E5BE87D00D5E065 /* WXSVGSvgView.m */; };
+		0AA9892F1E5BE87D00D5E065 /* WXSVGContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA9890C1E5BE87D00D5E065 /* WXSVGContainer.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AA988D61E5BE84300D5E065 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AA988C21E5BE84300D5E065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AA988CA1E5BE84300D5E065;
+			remoteInfo = WeexSVGPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AA988CB1E5BE84300D5E065 /* WeexSVGPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeexSVGPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA988CE1E5BE84300D5E065 /* WeexSVGPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeexSVGPlugin.h; sourceTree = "<group>"; };
+		0AA988CF1E5BE84300D5E065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA988D41E5BE84300D5E065 /* WeexSVGPluginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeexSVGPluginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA988D91E5BE84300D5E065 /* WeexSVGPluginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeexSVGPluginTests.m; sourceTree = "<group>"; };
+		0AA988DB1E5BE84300D5E065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA988E71E5BE87D00D5E065 /* WXSVGBaseBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGBaseBrush.h; sourceTree = "<group>"; };
+		0AA988E81E5BE87D00D5E065 /* WXSVGBaseBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGBaseBrush.m; sourceTree = "<group>"; };
+		0AA988E91E5BE87D00D5E065 /* WXSVGBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGBrush.h; sourceTree = "<group>"; };
+		0AA988EA1E5BE87D00D5E065 /* WXSVGBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGBrush.m; sourceTree = "<group>"; };
+		0AA988EB1E5BE87D00D5E065 /* WXSVGBrushConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGBrushConverter.h; sourceTree = "<group>"; };
+		0AA988EC1E5BE87D00D5E065 /* WXSVGBrushConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGBrushConverter.m; sourceTree = "<group>"; };
+		0AA988ED1E5BE87D00D5E065 /* WXSVGSolidColorBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGSolidColorBrush.h; sourceTree = "<group>"; };
+		0AA988EE1E5BE87D00D5E065 /* WXSVGSolidColorBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGSolidColorBrush.m; sourceTree = "<group>"; };
+		0AA988F01E5BE87D00D5E065 /* WXSVGCircleComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGCircleComponent.h; sourceTree = "<group>"; };
+		0AA988F11E5BE87D00D5E065 /* WXSVGCircleComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGCircleComponent.m; sourceTree = "<group>"; };
+		0AA988F21E5BE87D00D5E065 /* WXSVGComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGComponent.h; sourceTree = "<group>"; };
+		0AA988F31E5BE87D00D5E065 /* WXSVGComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGComponent.m; sourceTree = "<group>"; };
+		0AA988F41E5BE87D00D5E065 /* WXSVGLineComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGLineComponent.h; sourceTree = "<group>"; };
+		0AA988F51E5BE87D00D5E065 /* WXSVGLineComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGLineComponent.m; sourceTree = "<group>"; };
+		0AA988F61E5BE87D00D5E065 /* WXSVGNodeComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGNodeComponent.h; sourceTree = "<group>"; };
+		0AA988F71E5BE87D00D5E065 /* WXSVGNodeComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGNodeComponent.m; sourceTree = "<group>"; };
+		0AA988F81E5BE87D00D5E065 /* WXSVGRenderableComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGRenderableComponent.h; sourceTree = "<group>"; };
+		0AA988F91E5BE87D00D5E065 /* WXSVGRenderableComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGRenderableComponent.m; sourceTree = "<group>"; };
+		0AA988FB1E5BE87D00D5E065 /* WXConvert+WXSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXConvert+WXSVG.h"; sourceTree = "<group>"; };
+		0AA988FC1E5BE87D00D5E065 /* WXConvert+WXSVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXConvert+WXSVG.m"; sourceTree = "<group>"; };
+		0AA988FD1E5BE87D00D5E065 /* WXSVGPathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGPathParser.h; sourceTree = "<group>"; };
+		0AA988FE1E5BE87D00D5E065 /* WXSVGPathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGPathParser.m; sourceTree = "<group>"; };
+		0AA988FF1E5BE87D00D5E065 /* WXSVGPercentageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGPercentageConverter.h; sourceTree = "<group>"; };
+		0AA989001E5BE87D00D5E065 /* WXSVGPercentageConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGPercentageConverter.m; sourceTree = "<group>"; };
+		0AA989021E5BE87D00D5E065 /* WXSVGCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGCircle.h; sourceTree = "<group>"; };
+		0AA989031E5BE87D00D5E065 /* WXSVGCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGCircle.m; sourceTree = "<group>"; };
+		0AA989041E5BE87D00D5E065 /* WXSVGLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGLine.h; sourceTree = "<group>"; };
+		0AA989051E5BE87D00D5E065 /* WXSVGLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGLine.m; sourceTree = "<group>"; };
+		0AA989061E5BE87D00D5E065 /* WXSVGNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGNode.h; sourceTree = "<group>"; };
+		0AA989071E5BE87D00D5E065 /* WXSVGNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGNode.m; sourceTree = "<group>"; };
+		0AA989081E5BE87D00D5E065 /* WXSVGRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGRenderable.h; sourceTree = "<group>"; };
+		0AA989091E5BE87D00D5E065 /* WXSVGRenderable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGRenderable.m; sourceTree = "<group>"; };
+		0AA9890A1E5BE87D00D5E065 /* WXSVGSvgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGSvgView.h; sourceTree = "<group>"; };
+		0AA9890B1E5BE87D00D5E065 /* WXSVGSvgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGSvgView.m; sourceTree = "<group>"; };
+		0AA9890C1E5BE87D00D5E065 /* WXSVGContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGContainer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AA988C71E5BE84300D5E065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA988D11E5BE84300D5E065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA988D51E5BE84300D5E065 /* WeexSVGPlugin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AA988C11E5BE84300D5E065 = {
+			isa = PBXGroup;
+			children = (
+				0AA988CD1E5BE84300D5E065 /* WeexSVGPlugin */,
+				0AA988D81E5BE84300D5E065 /* WeexSVGPluginTests */,
+				0AA988CC1E5BE84300D5E065 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AA988CC1E5BE84300D5E065 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AA988CB1E5BE84300D5E065 /* WeexSVGPlugin.framework */,
+				0AA988D41E5BE84300D5E065 /* WeexSVGPluginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AA988CD1E5BE84300D5E065 /* WeexSVGPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				0AA988E51E5BE87D00D5E065 /* Source */,
+				0AA988CE1E5BE84300D5E065 /* WeexSVGPlugin.h */,
+				0AA988CF1E5BE84300D5E065 /* Info.plist */,
+			);
+			path = WeexSVGPlugin;
+			sourceTree = "<group>";
+		};
+		0AA988D81E5BE84300D5E065 /* WeexSVGPluginTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AA988D91E5BE84300D5E065 /* WeexSVGPluginTests.m */,
+				0AA988DB1E5BE84300D5E065 /* Info.plist */,
+			);
+			path = WeexSVGPluginTests;
+			sourceTree = "<group>";
+		};
+		0AA988E51E5BE87D00D5E065 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0AA988E61E5BE87D00D5E065 /* Brushes */,
+				0AA988EF1E5BE87D00D5E065 /* Component */,
+				0AA988FA1E5BE87D00D5E065 /* Utils */,
+				0AA989011E5BE87D00D5E065 /* View */,
+				0AA9890C1E5BE87D00D5E065 /* WXSVGContainer.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0AA988E61E5BE87D00D5E065 /* Brushes */ = {
+			isa = PBXGroup;
+			children = (
+				0AA988E71E5BE87D00D5E065 /* WXSVGBaseBrush.h */,
+				0AA988E81E5BE87D00D5E065 /* WXSVGBaseBrush.m */,
+				0AA988E91E5BE87D00D5E065 /* WXSVGBrush.h */,
+				0AA988EA1E5BE87D00D5E065 /* WXSVGBrush.m */,
+				0AA988EB1E5BE87D00D5E065 /* WXSVGBrushConverter.h */,
+				0AA988EC1E5BE87D00D5E065 /* WXSVGBrushConverter.m */,
+				0AA988ED1E5BE87D00D5E065 /* WXSVGSolidColorBrush.h */,
+				0AA988EE1E5BE87D00D5E065 /* WXSVGSolidColorBrush.m */,
+			);
+			path = Brushes;
+			sourceTree = "<group>";
+		};
+		0AA988EF1E5BE87D00D5E065 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0AA988F01E5BE87D00D5E065 /* WXSVGCircleComponent.h */,
+				0AA988F11E5BE87D00D5E065 /* WXSVGCircleComponent.m */,
+				0AA988F21E5BE87D00D5E065 /* WXSVGComponent.h */,
+				0AA988F31E5BE87D00D5E065 /* WXSVGComponent.m */,
+				0AA988F41E5BE87D00D5E065 /* WXSVGLineComponent.h */,
+				0AA988F51E5BE87D00D5E065 /* WXSVGLineComponent.m */,
+				0AA988F61E5BE87D00D5E065 /* WXSVGNodeComponent.h */,
+				0AA988F71E5BE87D00D5E065 /* WXSVGNodeComponent.m */,
+				0AA988F81E5BE87D00D5E065 /* WXSVGRenderableComponent.h */,
+				0AA988F91E5BE87D00D5E065 /* WXSVGRenderableComponent.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0AA988FA1E5BE87D00D5E065 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0AA988FB1E5BE87D00D5E065 /* WXConvert+WXSVG.h */,
+				0AA988FC1E5BE87D00D5E065 /* WXConvert+WXSVG.m */,
+				0AA988FD1E5BE87D00D5E065 /* WXSVGPathParser.h */,
+				0AA988FE1E5BE87D00D5E065 /* WXSVGPathParser.m */,
+				0AA988FF1E5BE87D00D5E065 /* WXSVGPercentageConverter.h */,
+				0AA989001E5BE87D00D5E065 /* WXSVGPercentageConverter.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0AA989011E5BE87D00D5E065 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AA989021E5BE87D00D5E065 /* WXSVGCircle.h */,
+				0AA989031E5BE87D00D5E065 /* WXSVGCircle.m */,
+				0AA989041E5BE87D00D5E065 /* WXSVGLine.h */,
+				0AA989051E5BE87D00D5E065 /* WXSVGLine.m */,
+				0AA989061E5BE87D00D5E065 /* WXSVGNode.h */,
+				0AA989071E5BE87D00D5E065 /* WXSVGNode.m */,
+				0AA989081E5BE87D00D5E065 /* WXSVGRenderable.h */,
+				0AA989091E5BE87D00D5E065 /* WXSVGRenderable.m */,
+				0AA9890A1E5BE87D00D5E065 /* WXSVGSvgView.h */,
+				0AA9890B1E5BE87D00D5E065 /* WXSVGSvgView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AA988C81E5BE84300D5E065 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA989251E5BE87D00D5E065 /* WXSVGCircle.h in Headers */,
+				0AA9891D1E5BE87D00D5E065 /* WXSVGRenderableComponent.h in Headers */,
+				0AA9891F1E5BE87D00D5E065 /* WXConvert+WXSVG.h in Headers */,
+				0AA9890D1E5BE87D00D5E065 /* WXSVGBaseBrush.h in Headers */,
+				0AA989131E5BE87D00D5E065 /* WXSVGSolidColorBrush.h in Headers */,
+				0AA989151E5BE87D00D5E065 /* WXSVGCircleComponent.h in Headers */,
+				0AA989291E5BE87D00D5E065 /* WXSVGNode.h in Headers */,
+				0AA988DC1E5BE84300D5E065 /* WeexSVGPlugin.h in Headers */,
+				0AA989271E5BE87D00D5E065 /* WXSVGLine.h in Headers */,
+				0AA9892F1E5BE87D00D5E065 /* WXSVGContainer.h in Headers */,
+				0AA9892B1E5BE87D00D5E065 /* WXSVGRenderable.h in Headers */,
+				0AA9892D1E5BE87D00D5E065 /* WXSVGSvgView.h in Headers */,
+				0AA989191E5BE87D00D5E065 /* WXSVGLineComponent.h in Headers */,
+				0AA989171E5BE87D00D5E065 /* WXSVGComponent.h in Headers */,
+				0AA989231E5BE87D00D5E065 /* WXSVGPercentageConverter.h in Headers */,
+				0AA989211E5BE87D00D5E065 /* WXSVGPathParser.h in Headers */,
+				0AA989111E5BE87D00D5E065 /* WXSVGBrushConverter.h in Headers */,
+				0AA9890F1E5BE87D00D5E065 /* WXSVGBrush.h in Headers */,
+				0AA9891B1E5BE87D00D5E065 /* WXSVGNodeComponent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AA988CA1E5BE84300D5E065 /* WeexSVGPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA988DF1E5BE84300D5E065 /* Build configuration list for PBXNativeTarget "WeexSVGPlugin" */;
+			buildPhases = (
+				0AA988C61E5BE84300D5E065 /* Sources */,
+				0AA988C71E5BE84300D5E065 /* Frameworks */,
+				0AA988C81E5BE84300D5E065 /* Headers */,
+				0AA988C91E5BE84300D5E065 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeexSVGPlugin;
+			productName = WeexSVGPlugin;
+			productReference = 0AA988CB1E5BE84300D5E065 /* WeexSVGPlugin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0AA988D31E5BE84300D5E065 /* WeexSVGPluginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA988E21E5BE84300D5E065 /* Build configuration list for PBXNativeTarget "WeexSVGPluginTests" */;
+			buildPhases = (
+				0AA988D01E5BE84300D5E065 /* Sources */,
+				0AA988D11E5BE84300D5E065 /* Frameworks */,
+				0AA988D21E5BE84300D5E065 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AA988D71E5BE84300D5E065 /* PBXTargetDependency */,
+			);
+			name = WeexSVGPluginTests;
+			productName = WeexSVGPluginTests;
+			productReference = 0AA988D41E5BE84300D5E065 /* WeexSVGPluginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AA988C21E5BE84300D5E065 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Taobao;
+				TargetAttributes = {
+					0AA988CA1E5BE84300D5E065 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					0AA988D31E5BE84300D5E065 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0AA988C51E5BE84300D5E065 /* Build configuration list for PBXProject "WeexSVGPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AA988C11E5BE84300D5E065;
+			productRefGroup = 0AA988CC1E5BE84300D5E065 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AA988CA1E5BE84300D5E065 /* WeexSVGPlugin */,
+				0AA988D31E5BE84300D5E065 /* WeexSVGPluginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AA988C91E5BE84300D5E065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA988D21E5BE84300D5E065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AA988C61E5BE84300D5E065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA989201E5BE87D00D5E065 /* WXConvert+WXSVG.m in Sources */,
+				0AA9892E1E5BE87D00D5E065 /* WXSVGSvgView.m in Sources */,
+				0AA989101E5BE87D00D5E065 /* WXSVGBrush.m in Sources */,
+				0AA989121E5BE87D00D5E065 /* WXSVGBrushConverter.m in Sources */,
+				0AA989161E5BE87D00D5E065 /* WXSVGCircleComponent.m in Sources */,
+				0AA989261E5BE87D00D5E065 /* WXSVGCircle.m in Sources */,
+				0AA989181E5BE87D00D5E065 /* WXSVGComponent.m in Sources */,
+				0AA9891A1E5BE87D00D5E065 /* WXSVGLineComponent.m in Sources */,
+				0AA9892A1E5BE87D00D5E065 /* WXSVGNode.m in Sources */,
+				0AA989241E5BE87D00D5E065 /* WXSVGPercentageConverter.m in Sources */,
+				0AA989141E5BE87D00D5E065 /* WXSVGSolidColorBrush.m in Sources */,
+				0AA9891E1E5BE87D00D5E065 /* WXSVGRenderableComponent.m in Sources */,
+				0AA989221E5BE87D00D5E065 /* WXSVGPathParser.m in Sources */,
+				0AA989281E5BE87D00D5E065 /* WXSVGLine.m in Sources */,
+				0AA9890E1E5BE87D00D5E065 /* WXSVGBaseBrush.m in Sources */,
+				0AA9891C1E5BE87D00D5E065 /* WXSVGNodeComponent.m in Sources */,
+				0AA9892C1E5BE87D00D5E065 /* WXSVGRenderable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA988D01E5BE84300D5E065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA988DA1E5BE84300D5E065 /* WeexSVGPluginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AA988D71E5BE84300D5E065 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AA988CA1E5BE84300D5E065 /* WeexSVGPlugin */;
+			targetProxy = 0AA988D61E5BE84300D5E065 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AA988DD1E5BE84300D5E065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AA988DE1E5BE84300D5E065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0AA988E01E5BE84300D5E065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WeexSVGPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.WeexSVGPlugin.WeexSVGPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0AA988E11E5BE84300D5E065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WeexSVGPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.WeexSVGPlugin.WeexSVGPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0AA988E31E5BE84300D5E065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeexSVGPluginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.WeexSVGPlugin.WeexSVGPluginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AA988E41E5BE84300D5E065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeexSVGPluginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.WeexSVGPlugin.WeexSVGPluginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AA988C51E5BE84300D5E065 /* Build configuration list for PBXProject "WeexSVGPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA988DD1E5BE84300D5E065 /* Debug */,
+				0AA988DE1E5BE84300D5E065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AA988DF1E5BE84300D5E065 /* Build configuration list for PBXNativeTarget "WeexSVGPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA988E01E5BE84300D5E065 /* Debug */,
+				0AA988E11E5BE84300D5E065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AA988E21E5BE84300D5E065 /* Build configuration list for PBXNativeTarget "WeexSVGPluginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA988E31E5BE84300D5E065 /* Debug */,
+				0AA988E41E5BE84300D5E065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AA988C21E5BE84300D5E065 /* Project object */;
+}
