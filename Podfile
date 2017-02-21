@@ -3,8 +3,7 @@ platform :ios, '7.0'
 #inhibit_all_warnings!
 
 def common
-	# pod 'WeexSDK'
-	pod 'WeexSDK', :path=>'/Users/yangshengtao/Desktop/git_repo/github_weex/ios/sdk/'
+	pod 'WeexSDK'
 end
 
 target 'WeexSVGPlugin' do
