@@ -1,0 +1,2 @@
+# WeexSVGPlugin
+weex SVG component
