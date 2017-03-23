@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.dependency "WeexSDK"
   #${weexpackPlaceHolder}
 
-  # s.vendored_frameworks = 'WeexSVGPlugin.framework'
+  s.vendored_frameworks = 'WeexSVGPlugin.framework'
 
   # s.user_target_xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => "'$(PODS_ROOT)/WeexSVGPlugin'" }
 

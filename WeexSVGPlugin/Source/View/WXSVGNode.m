@@ -137,7 +137,9 @@
 
 - (void)dealloc
 {
-    CGPathRelease(_cachedClipPath);
+    if (_cachedClipPath) {
+        CGPathRelease(_cachedClipPath);
+    }
 }
 
 #pragma mark - hitTest delagate

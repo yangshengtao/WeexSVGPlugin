@@ -159,9 +159,13 @@ RCT_ENUM_CONVERTER(RNSVGVBMOS, (@{
         case 1: // brush
             return [[WXSVGBaseBrush alloc] initWithArray:arr];
         default:
-            
             return nil;
     }
+}
+
++ (WXSVGBrush *)WXSVGCGColor:(id)value
+{
+    return [[WXSVGSolidColorBrush alloc] initWithColor:value];
 }
 
 /*
@@ -293,6 +297,19 @@ RCT_ENUM_CONVERTER(RNSVGVBMOS, (@{
     CGColorSpaceRelease(rgb);
     free(colorsAndOffsets.array);
     return (CGGradientRef)CFAutorelease(gradient);
+}
+
++ (NSArray *) colorWithHex:(NSInteger)hexValue alpha:(CGFloat)alphaValue
+{
+    NSNumber *r = [NSNumber numberWithDouble:((float)((hexValue & 0xFF0000) >> 16))/255.0];
+    NSNumber *g = [NSNumber numberWithDouble:((float)((hexValue & 0xFF00) >> 8))/255.0];
+    NSNumber *b = [NSNumber numberWithDouble:((float)(hexValue & 0xFF))/255.0];
+    return @[@(0), r, g, b, @(alphaValue)];
+}
+
++ (NSArray *) colorWithHex:(NSInteger)hexValue
+{
+    return [self colorWithHex:hexValue alpha:1.0];
 }
 
 @end

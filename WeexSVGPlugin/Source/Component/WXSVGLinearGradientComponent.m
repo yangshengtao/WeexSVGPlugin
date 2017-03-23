@@ -1,21 +1,21 @@
 //
-//  WXSVGLineComponent.m
-//  Pods
+//  WXSVGLinearGradientComponent.m
+//  WeexSVGPlugin
 //
-//  Created by yangshengtao on 17/2/17.
-//
+//  Created by yangshengtao on 2017/3/22.
+//  Copyright © 2017年 Taobao. All rights reserved.
 //
 
-#import "WXSVGLineComponent.h"
-#import "WXSVGLine.h"
-#import "WXConvert+WXSVG.h"
+#import "WXSVGLinearGradientComponent.h"
+#import "WXSVGLinearGradient.h"
 
-@implementation WXSVGLineComponent
+@implementation WXSVGLinearGradientComponent
 {
     NSString *_x1;
     NSString *_y1;
     NSString *_x2;
     NSString *_y2;
+    NSArray<NSNumber *> *_gradient;
 }
 
 #pragma mark -
@@ -33,23 +33,26 @@
         _x2 = attributes[@"x2"];
         _y1 = attributes[@"y1"];
         _y2 = attributes[@"y2"];
+        _gradient = [attributes wxmap_safeObjectForKey:@"gradient"];
     }
     
     return self;
 }
 
-
-#pragma mark -
-#pragma mark -
-- (WXSVGRenderable *)node
+- (void)viewDidLoad
 {
-    WXSVGLine *lineView = [WXSVGLine new];
-    lineView.x1 = _x1;
-    lineView.y1 = _y1;
-    lineView.x2 = _x2;
-    lineView.y2 = _y2;
-    [self syncViewAttributes:lineView];
-    return lineView;
+    [super viewDidLoad];
+    WXSVGLinearGradient *linearView = (WXSVGLinearGradient *)self.view;
+    linearView.x1 = _x1;
+    linearView.y1 = _y1;
+    linearView.x2 = _x2;
+    linearView.y2 = _y2;
+    linearView.gradient = _gradient;
+}
+
+- (WXSVGNode *)node
+{
+    return [WXSVGLinearGradient new];
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import <WeexSDK/WeexSDK.h>
 #import "WXSVGNode.h"
+#import "NSDictionary+WXSVG.h"
 
 @interface WXSVGNodeComponent : WXComponent
 

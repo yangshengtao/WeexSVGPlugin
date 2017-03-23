@@ -22,9 +22,17 @@
     return self;
 }
 
+- (instancetype)initWithColor:(id)value
+{
+    if (self = [super initWithColor:value]) {
+        _color = [WXConvert CGColor:value];
+    }
+    return self;
+}
+
 - (void)dealloc
 {
-    CGColorRelease(_color);
+    
 }
 
 - (BOOL)applyFillColor:(CGContextRef)context opacity:(CGFloat)opacity

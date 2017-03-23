@@ -20,11 +20,13 @@
 //+ (WXSVGTextFrame)RNSVGTextFrame:(id)json;
 + (WXSVGCGFloatArray)WXSVGCGFloatArray:(id)json;
 + (WXSVGBrush *)WXSVGBrush:(id)json;
++ (WXSVGBrush *)WXSVGCGColor:(id)value;
 
 
 + (NSArray *)WXSVGBezier:(id)json;
 + (CGRect)CGRect:(id)json offset:(NSUInteger)offset;
 + (CGColorRef)CGColor:(id)json offset:(NSUInteger)offset;
 + (CGGradientRef)CGGradient:(id)json offset:(NSUInteger)offset;
++ (NSArray *) colorWithHex:(NSInteger)hexValue;
 
 @end

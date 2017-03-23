@@ -15,6 +15,11 @@
     return [super init];
 }
 
+- (instancetype)initWithColor:(id)value
+{
+    return [super init];
+}
+
 - (BOOL)applyFillColor:(CGContextRef)context opacity:(CGFloat)opacity
 {
     return NO;

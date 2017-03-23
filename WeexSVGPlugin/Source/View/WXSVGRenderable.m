@@ -32,7 +32,9 @@
 
 - (void)dealloc
 {
-    CGPathRelease(_hitArea);
+    if (_hitArea) {
+        CGPathRelease(_hitArea);
+    }
     if (_strokeDasharray.array) {
         free(_strokeDasharray.array);
     }

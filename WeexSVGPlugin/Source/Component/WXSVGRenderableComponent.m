@@ -30,71 +30,33 @@
     return self;
 }
 
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    WXSVGRenderable *renderableView = (WXSVGRenderable *)self.view;
-    if (_attributes[@"strokeWidth"]) {
-        renderableView.strokeWidth = [_attributes[@"strokeWidth"] floatValue];
-    }
-    if (_attributes[@"stroke"]) {
-        renderableView.stroke = [WXConvert WXSVGBrush:@[@(0),@(0),@(0),@(0),@(1)]];
-    }
-    if (_attributes[@"fill"]) {
-        renderableView.fill = [WXConvert WXSVGBrush:@[@(0),@(255),@(0),@(0),@(1)]];
-    }
-    renderableView.strokeMiterlimit = 4;
-}
-
-/*
- - (void)insertSubview:(WXComponent *)subcomponent atIndex:(NSInteger)index
- {
- [super insertSubview:subcomponent atIndex:index];
- }
- 
- - (void)willRemoveSubview:(WXComponent *)component
- {
- [super willRemoveSubview:component];
- 
- }
-
-- (void)layoutDidFinish
-{
-    
-}
-
-- (void)viewWillUnload
-{
-    
-}
-
-- (void)dealloc
-{
-    
-}
-
-- (void)updateAttributes:(NSDictionary *)attributes
-{
-    
-}
-
-- (void)addEvent:(NSString *)eventName
-{
-    
-}
-
-- (void)removeEvent:(NSString *)eventName
-{
-    
-}
- */
-
 #pragma mark -
 #pragma mark - public methods
 - (WXSVGRenderable *)node
 {
-    return [WXSVGRenderable new];
+    WXSVGRenderable *renderableView = [WXSVGRenderable new];
+    [self syncViewAttributes:renderableView];
+    return renderableView;
+}
+
+- (void)syncViewAttributes:(WXSVGRenderable *)view
+{
+    if (_attributes[@"strokeWidth"]) {
+        view.strokeWidth = [_attributes[@"strokeWidth"] floatValue];
+    }
+    if (_attributes[@"stroke"]) {
+        //NSArray *rbga = [WXConvert colorWithHex:[_attributes[@"stroke"] integerValue]];
+        //renderableView.stroke = [WXConvert WXSVGBrush:rbga];
+        view.stroke = [WXConvert WXSVGCGColor:_attributes[@"stroke"]];
+    }
+    if (_attributes[@"fill"]) {
+        //NSArray *rbga = [WXConvert colorWithHex:[_attributes[@"stroke"] integerValue]];
+        //renderableView.fill = [WXConvert WXSVGBrush:rbga];
+        view.fill = [WXConvert WXSVGCGColor:_attributes[@"fill"]];
+    }
+    view.strokeMiterlimit = 4;
+    view.matrix = CGAffineTransformMake(1, 0, 0, 1, 0, 0);
+
 }
 
 @end

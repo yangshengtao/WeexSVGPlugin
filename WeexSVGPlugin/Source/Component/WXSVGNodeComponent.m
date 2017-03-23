@@ -39,23 +39,10 @@
 }
 
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    WXSVGNode *SVGView = (WXSVGNode *)self.view;
-    SVGView.matrix = CGAffineTransformMake(1, 0, 0, 1, 0, 0);
-}
-
 /*
 - (void)insertSubview:(WXComponent *)subcomponent atIndex:(NSInteger)index
 {
     [super insertSubview:subcomponent atIndex:index];
-}
-
-- (void)willRemoveSubview:(WXComponent *)component
-{
-    [super willRemoveSubview:component];
-    
 }
 
 - (void)layoutDidFinish
@@ -73,10 +60,6 @@
     
 }
 
-- (void)updateAttributes:(NSDictionary *)attributes
-{
-    
-}
 
 - (void)addEvent:(NSString *)eventName
 {
@@ -87,12 +70,25 @@
 {
     
 }
-*/
+ */
+- (void)willRemoveSubview:(WXComponent *)component
+{
+    [super willRemoveSubview:component];
+}
+
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    [super updateAttributes:attributes];
+}
+
+
 #pragma mark -
 #pragma mark - public methods
 - (WXSVGNode *)node
 {
-    return [WXSVGNode new];
+    WXSVGNode *svgView = [WXSVGNode new];
+    svgView.matrix = CGAffineTransformMake(1, 0, 0, 1, 0, 0);
+    return svgView;
 }
 
 @end
