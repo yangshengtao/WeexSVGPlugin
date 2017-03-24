@@ -40,10 +40,10 @@
 - (WXSVGEllipse *)node
 {
     WXSVGEllipse *ellipseView = [WXSVGEllipse new];
-    ellipseView.cx = _cx;
-    ellipseView.cy = _cy;
-    ellipseView.rx = _rx;
-    ellipseView.ry = _ry;
+    ellipseView.cx = [WXConvert WXPixelType:_cx scaleFactor:self.weexInstance.pixelScaleFactor];;
+    ellipseView.cy = [WXConvert WXPixelType:_cy scaleFactor:self.weexInstance.pixelScaleFactor];;
+    ellipseView.rx = [WXConvert WXPixelType:_rx scaleFactor:self.weexInstance.pixelScaleFactor];;
+    ellipseView.ry = [WXConvert WXPixelType:_ry scaleFactor:self.weexInstance.pixelScaleFactor];;
     [self syncViewAttributes:ellipseView];
     return ellipseView;
 }

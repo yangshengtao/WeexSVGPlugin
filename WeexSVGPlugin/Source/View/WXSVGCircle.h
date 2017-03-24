@@ -10,8 +10,8 @@
 
 @interface WXSVGCircle : WXSVGRenderable
 
-@property (nonatomic, strong) NSString* cx;
-@property (nonatomic, strong) NSString* cy;
-@property (nonatomic, strong) NSString* r;
+@property (nonatomic, assign) CGFloat cx;
+@property (nonatomic, assign) CGFloat cy;
+@property (nonatomic, copy) NSString *r;
 
 @end

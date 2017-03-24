@@ -10,7 +10,7 @@
 
 @implementation WXSVGEllipse
 
-- (void)setCx:(NSString *)cx
+- (void)setCx:(CGFloat)cx
 {
     if (cx == _cx) {
         return;
@@ -19,7 +19,7 @@
     _cx = cx;
 }
 
-- (void)setCy:(NSString *)cy
+- (void)setCy:(CGFloat)cy
 {
     if (cy == _cy) {
         return;
@@ -28,7 +28,7 @@
     _cy = cy;
 }
 
-- (void)setRx:(NSString *)rx
+- (void)setRx:(CGFloat)rx
 {
     if (rx == _rx) {
         return;
@@ -37,7 +37,7 @@
     _rx = rx;
 }
 
-- (void)setRy:(NSString *)ry
+- (void)setRy:(CGFloat)ry
 {
     if (ry == _ry) {
         return;
@@ -50,10 +50,10 @@
 {
     [self setBoundingBox:CGContextGetClipBoundingBox(context)];
     CGMutablePathRef path = CGPathCreateMutable();
-    CGFloat cx = [self getWidthRelatedValue:self.cx];
-    CGFloat cy = [self getHeightRelatedValue:self.cy];
-    CGFloat rx = [self getWidthRelatedValue:self.rx];
-    CGFloat ry = [self getHeightRelatedValue:self.ry];
+    CGFloat cx = self.cx;//[self getWidthRelatedValue:self.cx];
+    CGFloat cy = self.cy;//[self getHeightRelatedValue:self.cy];
+    CGFloat rx = self.rx;//[self getWidthRelatedValue:self.rx];
+    CGFloat ry = self.ry;//[self getHeightRelatedValue:self.ry];
     CGPathAddEllipseInRect(path, nil, CGRectMake(cx - rx, cy - ry, rx * 2, ry * 2));
     return (CGPathRef)CFAutorelease(path);
 }

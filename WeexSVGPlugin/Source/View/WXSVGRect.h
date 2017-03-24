@@ -10,11 +10,11 @@
 
 @interface WXSVGRect : WXSVGRenderable
 
-@property (nonatomic, strong) NSString* x;
-@property (nonatomic, strong) NSString* y;
-@property (nonatomic, strong) NSString* width;
-@property (nonatomic, strong) NSString* height;
-@property (nonatomic, strong) NSString* rx;
-@property (nonatomic, strong) NSString* ry;
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+@property (nonatomic, assign) CGFloat rx;
+@property (nonatomic, assign) CGFloat ry;
 
 @end

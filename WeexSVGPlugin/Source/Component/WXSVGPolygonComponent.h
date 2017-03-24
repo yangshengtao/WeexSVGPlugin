@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Taobao. All rights reserved.
 //
 
-#import "WXSVGRenderableComponent.h"
+#import "WXSVGPolylineComponent.h"
 
-@interface WXSVGPolygonComponent : WXSVGRenderableComponent
+@interface WXSVGPolygonComponent : WXSVGPolylineComponent
 
 @end

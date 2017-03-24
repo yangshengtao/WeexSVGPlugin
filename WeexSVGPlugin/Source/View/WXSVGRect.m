@@ -10,7 +10,7 @@
 
 @implementation WXSVGRect
 
-- (void)setX:(NSString *)x
+- (void)setX:(CGFloat)x
 {
     if (x == _x) {
         return;
@@ -19,7 +19,7 @@
     _x = x;
 }
 
-- (void)setY:(NSString *)y
+- (void)setY:(CGFloat)y
 {
     if (y == _y) {
         return;
@@ -28,7 +28,7 @@
     _y = y;
 }
 
-- (void)setWidth:(NSString *)width
+- (void)setWidth:(CGFloat)width
 {
     if (width == _width) {
         return;
@@ -37,7 +37,7 @@
     _width = width;
 }
 
-- (void)setHeight:(NSString *)height
+- (void)setHeight:(CGFloat)height
 {
     if (height == _height) {
         return;
@@ -46,7 +46,7 @@
     _height = height;
 }
 
-- (void)setRx:(NSString *)rx
+- (void)setRx:(CGFloat)rx
 {
     if (rx == _rx) {
         return;
@@ -55,7 +55,7 @@
     _rx = rx;
 }
 
-- (void)setRy:(NSString *)ry
+- (void)setRy:(CGFloat)ry
 {
     if (ry == _ry) {
         return;
@@ -68,12 +68,12 @@
 {
     [self setBoundingBox:CGContextGetClipBoundingBox(context)];
     CGMutablePathRef path = CGPathCreateMutable();
-    CGFloat x = [self getWidthRelatedValue:self.x];
-    CGFloat y = [self getHeightRelatedValue:self.y];
-    CGFloat width = [self getWidthRelatedValue:self.width];
-    CGFloat height = [self getHeightRelatedValue:self.height];
-    CGFloat rx = [self getWidthRelatedValue:self.rx];
-    CGFloat ry = [self getHeightRelatedValue:self.ry];
+    CGFloat x = self.x;//[self getWidthRelatedValue:self.x];
+    CGFloat y = self.y;//[self getHeightRelatedValue:self.y];
+    CGFloat width = self.width;
+    CGFloat height = self.height;
+    CGFloat rx = self.rx;//[self getWidthRelatedValue:self.rx];
+    CGFloat ry = self.ry;//[self getHeightRelatedValue:self.ry];
     
     if (rx != 0 || ry != 0) {
         if (rx == 0) {

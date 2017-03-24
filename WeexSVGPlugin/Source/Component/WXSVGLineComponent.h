@@ -11,5 +11,4 @@
 @interface WXSVGLineComponent : WXSVGRenderableComponent
 
 
-
 @end

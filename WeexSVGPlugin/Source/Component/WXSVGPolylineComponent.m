@@ -1,15 +1,16 @@
 //
-//  WXSVGPolygonComponent.m
+//  WXSVGPolylineComponent.m
 //  WeexSVGPlugin
 //
 //  Created by yangshengtao on 2017/3/24.
 //  Copyright © 2017年 Taobao. All rights reserved.
 //
 
-#import "WXSVGPolygonComponent.h"
-#import "WXSVGPolygon.h"
+#import "WXSVGPolylineComponent.h"
+#import "WXSVGPolyline.h"
 
-@implementation WXSVGPolygonComponent
+@implementation WXSVGPolylineComponent
+@synthesize points = _points;
 
 #pragma mark -
 #pragma mark - override methods
@@ -22,7 +23,10 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        
+        NSString *pointSrt = attributes[@"points"];
+        if (pointSrt) {
+            _points = [pointSrt componentsSeparatedByString:@" "];
+        }
     }
     
     return self;
@@ -32,9 +36,10 @@
 #pragma mark -
 - (WXSVGRenderable *)node
 {
-    WXSVGPolygon *polygonView = [WXSVGPolygon new];
-    polygonView.points = self.points;
-    [self syncViewAttributes:polygonView];
-    return polygonView;
+    WXSVGPolyline *polylineView = [WXSVGPolyline new];
+    polylineView.points = _points;
+    [self syncViewAttributes:polylineView];
+    return polylineView;
 }
+
 @end

@@ -38,9 +38,11 @@
 - (WXSVGCircle *)node
 {
     WXSVGCircle *circleView = [WXSVGCircle new];
-    circleView.cx = _cx;
-    circleView.cy = _cy;
-    circleView.r = _r;
+    circleView.cx = [WXConvert WXPixelType:_cx scaleFactor:self.weexInstance.pixelScaleFactor];
+    circleView.cy = [WXConvert WXPixelType:_cy scaleFactor:self.weexInstance.pixelScaleFactor];
+    CGFloat r = [WXConvert WXPixelType:_r scaleFactor:self.weexInstance.pixelScaleFactor];
+    circleView.r = [NSString stringWithFormat:@"%f",r];
+    
     [self syncViewAttributes:circleView];
     return circleView;
 }

@@ -1,28 +1,38 @@
 //
-//  WXSVGPolygon.m
+//  WXSVGPolyline.m
 //  WeexSVGPlugin
 //
 //  Created by yangshengtao on 2017/3/24.
 //  Copyright © 2017年 Taobao. All rights reserved.
 //
 
-#import "WXSVGPolygon.h"
+#import "WXSVGPolyline.h"
 #import "WXConvert+WXSVG.h"
 
-@implementation WXSVGPolygon
+@implementation WXSVGPolyline
+
+- (void)setPoints:(NSArray *)points
+{
+    if (points == _points) {
+        return;
+    }
+    _points = points;
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    return nil;
+}
 
 - (CGPathRef)getPath:(CGContextRef)context
 {
     [self setBoundingBox:CGContextGetClipBoundingBox(context)];
     CGMutablePathRef path = CGPathCreateMutable();
     
-    if (!self.points || (self.points.count <= 0)) {
+    if (!_points || (_points.count <= 0)) {
         return nil;
     }
-    NSMutableArray *polygonArr = [NSMutableArray arrayWithArray:self.points];
-    if (![self.points.lastObject isEqualToString:self.points.firstObject]) {
-        [polygonArr addObject:self.points.firstObject];
-    }
+    NSMutableArray *polygonArr = [NSMutableArray arrayWithArray:_points];
     for (int idx = 0; idx < polygonArr.count; idx++) {
         NSArray *pointArr = [polygonArr[idx] componentsSeparatedByString:@","];
         CGPoint point = [WXConvert CGPoint:pointArr];
@@ -33,6 +43,7 @@
             CGPathAddLineToPoint(path, nil, point.x, point.y);
         }
     }
+    
     return (CGPathRef)CFAutorelease(path);
 }
 

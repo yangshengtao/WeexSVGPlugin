@@ -10,7 +10,7 @@
 
 @implementation WXSVGCircle
 
-- (void)setCx:(NSString *)cx
+- (void)setCx:(CGFloat)cx
 {
     if (cx == _cx) {
         return;
@@ -19,7 +19,7 @@
     _cx = cx;
 }
 
-- (void)setCy:(NSString *)cy
+- (void)setCy:(CGFloat)cy
 {
     if (cy == _cy) {
         return;
@@ -42,8 +42,8 @@
     [self setBoundingBox:CGContextGetClipBoundingBox(context)];
     CGMutablePathRef path = CGPathCreateMutable();
     WXSVGPercentageConverter* convert = [[WXSVGPercentageConverter alloc] init];
-    CGFloat cx = [self getWidthRelatedValue:self.cx];
-    CGFloat cy = [self getHeightRelatedValue:self.cy];
+    CGFloat cx = self.cx;//[self getWidthRelatedValue:self.cx];
+    CGFloat cy = self.cy;//[self getHeightRelatedValue:self.cy];
     CGFloat r;
     // radius percentage calculate formula:
     // radius = sqrt(pow((width*percent), 2) + pow((height*percent), 2)) / sqrt(2)

@@ -10,9 +10,9 @@
 
 @interface WXSVGLine : WXSVGRenderable
 
-@property (nonatomic, strong) NSString* x1;
-@property (nonatomic, strong) NSString* y1;
-@property (nonatomic, strong) NSString* x2;
-@property (nonatomic, strong) NSString* y2;
+@property (nonatomic, assign) CGFloat x1;
+@property (nonatomic, assign) CGFloat y1;
+@property (nonatomic, assign) CGFloat x2;
+@property (nonatomic, assign) CGFloat y2;
 
 @end

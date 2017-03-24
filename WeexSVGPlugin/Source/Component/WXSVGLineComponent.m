@@ -44,10 +44,10 @@
 - (WXSVGRenderable *)node
 {
     WXSVGLine *lineView = [WXSVGLine new];
-    lineView.x1 = _x1;
-    lineView.y1 = _y1;
-    lineView.x2 = _x2;
-    lineView.y2 = _y2;
+    lineView.x1 = [WXConvert WXPixelType:_x1 scaleFactor:self.weexInstance.pixelScaleFactor];
+    lineView.y1 = [WXConvert WXPixelType:_y1 scaleFactor:self.weexInstance.pixelScaleFactor];
+    lineView.x2 = [WXConvert WXPixelType:_x2 scaleFactor:self.weexInstance.pixelScaleFactor];
+    lineView.y2 = [WXConvert WXPixelType:_y2 scaleFactor:self.weexInstance.pixelScaleFactor];
     [self syncViewAttributes:lineView];
     return lineView;
 }

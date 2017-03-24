@@ -44,12 +44,12 @@
 - (WXSVGRect *)node
 {
     WXSVGRect *rectView = [WXSVGRect new];
-    rectView.x = _x;
-    rectView.y = _y;
-    rectView.width = _width;
-    rectView.height = _height;
-    rectView.rx = _rx;
-    rectView.ry = _ry;
+    rectView.x = [WXConvert WXPixelType:_x scaleFactor:self.weexInstance.pixelScaleFactor];
+    rectView.y = [WXConvert WXPixelType:_y scaleFactor:self.weexInstance.pixelScaleFactor];
+    rectView.width = [WXConvert WXPixelType:_width scaleFactor:self.weexInstance.pixelScaleFactor];
+    rectView.height = [WXConvert WXPixelType:_height scaleFactor:self.weexInstance.pixelScaleFactor];;
+    rectView.rx = [WXConvert WXPixelType:_rx scaleFactor:self.weexInstance.pixelScaleFactor];
+    rectView.ry = [WXConvert WXPixelType:_ry scaleFactor:self.weexInstance.pixelScaleFactor];
     [self syncViewAttributes:rectView];
     return rectView;
 }

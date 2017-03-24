@@ -1,5 +1,5 @@
 //
-//  WXSVGPolygon.h
+//  WXSVGPolyline.h
 //  WeexSVGPlugin
 //
 //  Created by yangshengtao on 2017/3/24.
@@ -7,9 +7,9 @@
 //
 
 #import "WXSVGRenderable.h"
-#import "WXSVGPolyline.h"
 
-@interface WXSVGPolygon : WXSVGPolyline
+@interface WXSVGPolyline : WXSVGRenderable
 
+@property (nonatomic, strong) NSArray* points;
 
 @end

@@ -10,9 +10,9 @@
 
 @interface WXSVGEllipse : WXSVGRenderable
 
-@property (nonatomic, strong) NSString* cx;
-@property (nonatomic, strong) NSString* cy;
-@property (nonatomic, strong) NSString* rx;
-@property (nonatomic, strong) NSString* ry;
+@property (nonatomic, assign) CGFloat cx;
+@property (nonatomic, assign) CGFloat cy;
+@property (nonatomic, assign) CGFloat rx;
+@property (nonatomic, assign) CGFloat ry;
 
 @end
