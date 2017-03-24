@@ -28,5 +28,6 @@
 + (CGColorRef)CGColor:(id)json offset:(NSUInteger)offset;
 + (CGGradientRef)CGGradient:(id)json offset:(NSUInteger)offset;
 + (NSArray *) colorWithHex:(NSInteger)hexValue;
++ (CGPoint)CGPoint:(id)json;
 
 @end

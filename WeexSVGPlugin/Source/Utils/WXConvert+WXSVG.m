@@ -239,6 +239,15 @@ RCT_ENUM_CONVERTER(RNSVGVBMOS, (@{
     };
 }
 
++ (CGPoint)CGPoint:(id)json
+{
+    NSArray *arr = [self NSArray:json];
+    if (arr.count <= 1) {
+        return CGPointZero;
+    }
+    return CGPointMake([arr[0] floatValue], [arr[1] floatValue]);
+}
+
 + (CGColorRef)CGColor:(id)json offset:(NSUInteger)offset
 {
     NSArray *arr = [self NSArray:json];

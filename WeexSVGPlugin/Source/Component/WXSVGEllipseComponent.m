@@ -37,19 +37,17 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (WXSVGEllipse *)node
 {
-    [super viewDidLoad];
-    WXSVGEllipse *ellipseView = (WXSVGEllipse *)self.view;
+    WXSVGEllipse *ellipseView = [WXSVGEllipse new];
     ellipseView.cx = _cx;
     ellipseView.cy = _cy;
     ellipseView.rx = _rx;
     ellipseView.ry = _ry;
+    [self syncViewAttributes:ellipseView];
+    return ellipseView;
 }
 
-- (WXSVGEllipse *)node
-{
-    return [WXSVGEllipse new];
-}
+
 
 @end
