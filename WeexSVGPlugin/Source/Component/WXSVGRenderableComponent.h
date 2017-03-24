@@ -14,8 +14,6 @@
 
 - (WXSVGRenderable *)node;
 
-- (void)syncViewAttributes:(WXSVGRenderable *)view;
-
 @property (nonatomic, strong) WXSVGBrush *fill;
 @property (nonatomic, assign) CGFloat fillOpacity;
 @property (nonatomic, assign) WXSVGCGFCRule fillRule;
@@ -28,7 +26,6 @@
 @property (nonatomic, assign) CGFloat strokeDashoffset;
 @property (nonatomic, assign) CGFloat strokeMiterlimit;
 @property (nonatomic, strong) NSArray<NSString *> *propList;
-@property (nonatomic, strong) NSDictionary *attributes;
 
 
 @end

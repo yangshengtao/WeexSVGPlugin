@@ -10,7 +10,7 @@
 #import "WXConvert+WXSVG.h"
 
 @implementation WXSVGRenderableComponent
-@synthesize attributes = _attributes;
+
 #pragma mark -
 #pragma mark - override methods
 - (instancetype)initWithRef:(NSString *)ref
@@ -22,9 +22,7 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        if (!_attributes) {
-            _attributes = [NSDictionary dictionaryWithDictionary:attributes];
-        }
+        
     }
     
     return self;
@@ -39,23 +37,24 @@
     return renderableView;
 }
 
-- (void)syncViewAttributes:(WXSVGRenderable *)view
+- (void)syncViewAttributes:(WXSVGNode *)view
 {
-    if (_attributes[@"strokeWidth"]) {
-        view.strokeWidth = [_attributes[@"strokeWidth"] floatValue];
+    WXSVGRenderable *renderableView = (WXSVGRenderable *)view;
+    if (self.attributes[@"strokeWidth"]) {
+        renderableView.strokeWidth = [self.attributes[@"strokeWidth"] floatValue];
     }
-    if (_attributes[@"stroke"]) {
+    if (self.attributes[@"stroke"]) {
         //NSArray *rbga = [WXConvert colorWithHex:[_attributes[@"stroke"] integerValue]];
         //renderableView.stroke = [WXConvert WXSVGBrush:rbga];
-        view.stroke = [WXConvert WXSVGCGColor:_attributes[@"stroke"]];
+        renderableView.stroke = [WXConvert WXSVGCGColor:self.attributes[@"stroke"]];
     }
-    if (_attributes[@"fill"]) {
+    if (self.attributes[@"fill"]) {
         //NSArray *rbga = [WXConvert colorWithHex:[_attributes[@"stroke"] integerValue]];
         //renderableView.fill = [WXConvert WXSVGBrush:rbga];
-        view.fill = [WXConvert WXSVGCGColor:_attributes[@"fill"]];
+        renderableView.fill = [WXConvert WXSVGCGColor:self.attributes[@"fill"]];
     }
-    view.strokeMiterlimit = 4;
-    view.matrix = CGAffineTransformMake(1, 0, 0, 1, 0, 0);
+    renderableView.strokeMiterlimit = 4;
+    [super syncViewAttributes:view];
 
 }
 

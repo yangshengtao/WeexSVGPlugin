@@ -15,6 +15,7 @@
 @synthesize matrix = _matrix;
 @synthesize clipPath = _clipPath;
 @synthesize responsible = _responsible;
+@synthesize attributes = _attributes;
 
 #pragma mark -
 #pragma mark - override methods
@@ -27,7 +28,9 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        
+        if (!_attributes) {
+            _attributes = [NSDictionary dictionaryWithDictionary:attributes];
+        }
     }
     
     return self;
@@ -87,8 +90,13 @@
 - (WXSVGNode *)node
 {
     WXSVGNode *svgView = [WXSVGNode new];
-    svgView.matrix = CGAffineTransformMake(1, 0, 0, 1, 0, 0);
+    [self syncViewAttributes:svgView];
     return svgView;
+}
+
+- (void)syncViewAttributes:(WXSVGNode *)view
+{
+    view.matrix = CGAffineTransformMake(1, 0, 0, 1, 0, 0);
 }
 
 @end

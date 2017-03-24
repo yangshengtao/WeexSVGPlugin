@@ -37,16 +37,12 @@
 
 - (WXSVGCircle *)node
 {
-    return [WXSVGCircle new];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    WXSVGCircle *circleView = (WXSVGCircle *)self.view;
+    WXSVGCircle *circleView = [WXSVGCircle new];
     circleView.cx = _cx;
     circleView.cy = _cy;
     circleView.r = _r;
+    [self syncViewAttributes:circleView];
+    return circleView;
 }
 
 @end

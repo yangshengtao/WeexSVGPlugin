@@ -34,14 +34,11 @@
 
 - (WXSVGPath *)node
 {
-    return [WXSVGPath new];
+    WXSVGPath *pathView = [WXSVGPath new];
+    pathView.d = [WXConvert CGPath:_d];
+    [self syncViewAttributes:pathView];
+    return pathView;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    WXSVGPath *pathView = (WXSVGPath *)self.view;
-    pathView.d = [WXConvert CGPath:_d];
-}
 
 @end

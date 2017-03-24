@@ -282,12 +282,18 @@
 
 - (CGFloat)getWidthRelatedValue:(NSString *)string
 {
-    return [_widthConverter stringToFloat:string];
+    if (string) {
+        return [_widthConverter stringToFloat:string];
+    }
+    return 0;
 }
 
 - (CGFloat)getHeightRelatedValue:(NSString *)string
 {
-    return [_heightConverter stringToFloat:string];
+    if (string) {
+        return [_heightConverter stringToFloat:string];
+    }
+    return 0;
 }
 
 - (CGFloat)getContextWidth

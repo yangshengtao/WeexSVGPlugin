@@ -41,21 +41,17 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (WXSVGRect *)node
 {
-    [super viewDidLoad];
-    WXSVGRect *rectView = (WXSVGRect *)self.view;
+    WXSVGRect *rectView = [WXSVGRect new];
     rectView.x = _x;
     rectView.y = _y;
     rectView.width = _width;
     rectView.height = _height;
     rectView.rx = _rx;
     rectView.ry = _ry;
-}
-
-- (WXSVGRect *)node
-{
-    return [WXSVGRect new];
+    [self syncViewAttributes:rectView];
+    return rectView;
 }
 
 @end

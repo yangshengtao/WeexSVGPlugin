@@ -18,7 +18,10 @@
 @property (nonatomic, copy) NSString *clipPath;
 @property (nonatomic, assign) WXSVGCGFCRule clipRule;
 @property (nonatomic, assign) BOOL responsible;
+@property (nonatomic, strong) NSDictionary *attributes;
 
 - (WXSVGNode *)node;
+
+- (void)syncViewAttributes:(WXSVGNode *)view;
 
 @end
