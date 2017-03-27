@@ -14,6 +14,7 @@
 @property (nonatomic, copy) NSString *y1;
 @property (nonatomic, copy) NSString *x2;
 @property (nonatomic, copy) NSString *y2;
-@property (nonatomic, copy) NSArray<NSNumber *> *gradient;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSMutableArray *gradient;
 
 @end

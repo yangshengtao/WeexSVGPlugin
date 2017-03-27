@@ -11,7 +11,7 @@
 
 @interface WXSVGPathParser : NSObject
 
-- (instancetype) initWithPathString:(NSString *)d;
+- (instancetype) initWithPathString:(NSString *)d withScale:(CGFloat)scale;
 - (CGPathRef)getPath;
 
 @end

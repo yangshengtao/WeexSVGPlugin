@@ -22,7 +22,10 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        
+        //_strokeWidth = [attributes[@"strokeWidth"] floatValue];
+        //_stroke = [WXConvert WXSVGCGColor:self.attributes[@"stroke"]];
+        //_fill = [WXConvert WXSVGCGColor:self.attributes[@"fill"]];
+        //_strokeOpacity = [attributes[@"strokeOpacity"] floatValue];
     }
     
     return self;

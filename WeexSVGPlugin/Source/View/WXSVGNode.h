@@ -15,6 +15,11 @@ typedef CF_ENUM(int32_t, WXSVGCGFCRule) {
     kWXSVGCGFCRuleNonzero
 };
 
+typedef struct {
+    size_t count;
+    CGFloat *array;
+} WXSVGCGFloatArray;
+
 @interface WXSVGNode : UIView
 
 @property (nonatomic, strong) NSString *name;
@@ -62,6 +67,8 @@ typedef CF_ENUM(int32_t, WXSVGCGFCRule) {
  * save element`s defination into svg element.
  */
 - (void)saveDefinition;
+
+- (void)addGradientStopColor:(NSString *)stopColor;
 
 /**
  * just for template node to merge target node`s properties into owned properties

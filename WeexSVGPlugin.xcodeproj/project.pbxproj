@@ -13,6 +13,15 @@
 		0A3E5EEB1E84F82100F1E5FD /* WXSVGPolylineComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EE91E84F82100F1E5FD /* WXSVGPolylineComponent.h */; };
 		0A3E5EEC1E84F82100F1E5FD /* WXSVGPolylineComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EEA1E84F82100F1E5FD /* WXSVGPolylineComponent.m */; };
 		0A3E5EED1E84F82100F1E5FD /* WXSVGPolylineComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EEA1E84F82100F1E5FD /* WXSVGPolylineComponent.m */; };
+		0A3E5EFC1E85166300F1E5FD /* WXSVGDefsComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EFA1E85166300F1E5FD /* WXSVGDefsComponent.h */; };
+		0A3E5EFD1E85166300F1E5FD /* WXSVGDefsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EFB1E85166300F1E5FD /* WXSVGDefsComponent.m */; };
+		0A3E5EFE1E85166300F1E5FD /* WXSVGDefsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EFB1E85166300F1E5FD /* WXSVGDefsComponent.m */; };
+		0A3E5F011E85167D00F1E5FD /* WXSVGStopComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EFF1E85167D00F1E5FD /* WXSVGStopComponent.h */; };
+		0A3E5F021E85167D00F1E5FD /* WXSVGStopComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5F001E85167D00F1E5FD /* WXSVGStopComponent.m */; };
+		0A3E5F031E85167D00F1E5FD /* WXSVGStopComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5F001E85167D00F1E5FD /* WXSVGStopComponent.m */; };
+		0A9EF76D1E88EC24009E517C /* WXSVGStop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9EF76B1E88EC24009E517C /* WXSVGStop.h */; };
+		0A9EF76E1E88EC24009E517C /* WXSVGStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EF76C1E88EC24009E517C /* WXSVGStop.m */; };
+		0A9EF76F1E88EC24009E517C /* WXSVGStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EF76C1E88EC24009E517C /* WXSVGStop.m */; };
 		0AA1CE201E82A37100E18EB9 /* WXSVGEllipse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE181E82A37100E18EB9 /* WXSVGEllipse.h */; };
 		0AA1CE211E82A37100E18EB9 /* WXSVGEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE191E82A37100E18EB9 /* WXSVGEllipse.m */; };
 		0AA1CE221E82A37100E18EB9 /* WXSVGGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE1A1E82A37100E18EB9 /* WXSVGGroup.h */; };
@@ -95,6 +104,9 @@
 		0AAB38081E84D0BD00311607 /* WXSVGPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAB38061E84D0BD00311607 /* WXSVGPolygon.h */; };
 		0AAB38091E84D0BD00311607 /* WXSVGPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB38071E84D0BD00311607 /* WXSVGPolygon.m */; };
 		0AAB380A1E84D0BD00311607 /* WXSVGPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB38071E84D0BD00311607 /* WXSVGPolygon.m */; };
+		0AF497031E88B0870072837A /* WXSVGDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF497011E88B0870072837A /* WXSVGDefs.h */; };
+		0AF497041E88B0870072837A /* WXSVGDefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF497021E88B0870072837A /* WXSVGDefs.m */; };
+		0AF497051E88B0870072837A /* WXSVGDefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF497021E88B0870072837A /* WXSVGDefs.m */; };
 		34136B08F621E224CE5AADE8 /* libPods-WeexSVGPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2DFB3A777123AD5D05FE41 /* libPods-WeexSVGPlugin.a */; };
 		83E1FC2FA58F7DB4DDC923AB /* libPods-WeexSVGPluginTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A530AF16CA737D2CD82583 /* libPods-WeexSVGPluginTests.a */; };
 /* End PBXBuildFile section */
@@ -114,6 +126,12 @@
 		0A3E5EE51E84F66F00F1E5FD /* WXSVGPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGPolyline.m; sourceTree = "<group>"; };
 		0A3E5EE91E84F82100F1E5FD /* WXSVGPolylineComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGPolylineComponent.h; sourceTree = "<group>"; };
 		0A3E5EEA1E84F82100F1E5FD /* WXSVGPolylineComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGPolylineComponent.m; sourceTree = "<group>"; };
+		0A3E5EFA1E85166300F1E5FD /* WXSVGDefsComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGDefsComponent.h; sourceTree = "<group>"; };
+		0A3E5EFB1E85166300F1E5FD /* WXSVGDefsComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGDefsComponent.m; sourceTree = "<group>"; };
+		0A3E5EFF1E85167D00F1E5FD /* WXSVGStopComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGStopComponent.h; sourceTree = "<group>"; };
+		0A3E5F001E85167D00F1E5FD /* WXSVGStopComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGStopComponent.m; sourceTree = "<group>"; };
+		0A9EF76B1E88EC24009E517C /* WXSVGStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGStop.h; sourceTree = "<group>"; };
+		0A9EF76C1E88EC24009E517C /* WXSVGStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGStop.m; sourceTree = "<group>"; };
 		0AA1CE181E82A37100E18EB9 /* WXSVGEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGEllipse.h; sourceTree = "<group>"; };
 		0AA1CE191E82A37100E18EB9 /* WXSVGEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGEllipse.m; sourceTree = "<group>"; };
 		0AA1CE1A1E82A37100E18EB9 /* WXSVGGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGGroup.h; sourceTree = "<group>"; };
@@ -187,6 +205,8 @@
 		0AAB38021E84D08600311607 /* WXSVGPolygonComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGPolygonComponent.m; sourceTree = "<group>"; };
 		0AAB38061E84D0BD00311607 /* WXSVGPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGPolygon.h; sourceTree = "<group>"; };
 		0AAB38071E84D0BD00311607 /* WXSVGPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGPolygon.m; sourceTree = "<group>"; };
+		0AF497011E88B0870072837A /* WXSVGDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSVGDefs.h; sourceTree = "<group>"; };
+		0AF497021E88B0870072837A /* WXSVGDefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSVGDefs.m; sourceTree = "<group>"; };
 		0D2DFB3A777123AD5D05FE41 /* libPods-WeexSVGPlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexSVGPlugin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B57E5ED37F6186C847039F2 /* Pods-WeexSVGPluginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexSVGPluginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexSVGPluginTests/Pods-WeexSVGPluginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		70A530AF16CA737D2CD82583 /* libPods-WeexSVGPluginTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexSVGPluginTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,6 +319,10 @@
 				0AA1CE2E1E82A67800E18EB9 /* WXSVGLinearGradientComponent.m */,
 				0AA1CE501E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.h */,
 				0AA1CE511E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.m */,
+				0A3E5EFA1E85166300F1E5FD /* WXSVGDefsComponent.h */,
+				0A3E5EFB1E85166300F1E5FD /* WXSVGDefsComponent.m */,
+				0A3E5EFF1E85167D00F1E5FD /* WXSVGStopComponent.h */,
+				0A3E5F001E85167D00F1E5FD /* WXSVGStopComponent.m */,
 				0AA1CE3C1E82AA1E00E18EB9 /* WXSVGEllipseComponent.h */,
 				0AA1CE3D1E82AA1E00E18EB9 /* WXSVGEllipseComponent.m */,
 				0AA1CE3E1E82AA1E00E18EB9 /* WXSVGGroupComponent.h */,
@@ -349,6 +373,10 @@
 				0AA1CE291E82A3CF00E18EB9 /* WXSVGLinearGradient.m */,
 				0AA1CE551E82AAC100E18EB9 /* WXSVGRadialGradient.h */,
 				0AA1CE561E82AAC100E18EB9 /* WXSVGRadialGradient.m */,
+				0AF497011E88B0870072837A /* WXSVGDefs.h */,
+				0AF497021E88B0870072837A /* WXSVGDefs.m */,
+				0A9EF76B1E88EC24009E517C /* WXSVGStop.h */,
+				0A9EF76C1E88EC24009E517C /* WXSVGStop.m */,
 				0AA1CE1A1E82A37100E18EB9 /* WXSVGGroup.h */,
 				0AA1CE1B1E82A37100E18EB9 /* WXSVGGroup.m */,
 				0AA1CE1C1E82A37100E18EB9 /* WXSVGPath.h */,
@@ -393,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA989251E5BE87D00D5E065 /* WXSVGCircle.h in Headers */,
+				0A3E5F011E85167D00F1E5FD /* WXSVGStopComponent.h in Headers */,
 				0AA1CE521E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.h in Headers */,
 				0AA1CE571E82AAC100E18EB9 /* WXSVGRadialGradient.h in Headers */,
 				0AA1CE4A1E82AA1E00E18EB9 /* WXSVGPathComponent.h in Headers */,
@@ -401,6 +430,7 @@
 				0AA9891F1E5BE87D00D5E065 /* WXConvert+WXSVG.h in Headers */,
 				0AA9890D1E5BE87D00D5E065 /* WXSVGBaseBrush.h in Headers */,
 				0A3E5EEB1E84F82100F1E5FD /* WXSVGPolylineComponent.h in Headers */,
+				0AF497031E88B0870072837A /* WXSVGDefs.h in Headers */,
 				0AA1CE471E82AA1E00E18EB9 /* WXSVGGroupComponent.h in Headers */,
 				0AA989131E5BE87D00D5E065 /* WXSVGSolidColorBrush.h in Headers */,
 				0AA1CE441E82AA1E00E18EB9 /* WXSVGEllipseComponent.h in Headers */,
@@ -408,6 +438,7 @@
 				0AA989151E5BE87D00D5E065 /* WXSVGCircleComponent.h in Headers */,
 				0AA989291E5BE87D00D5E065 /* WXSVGNode.h in Headers */,
 				0AAB38031E84D08600311607 /* WXSVGPolygonComponent.h in Headers */,
+				0A3E5EFC1E85166300F1E5FD /* WXSVGDefsComponent.h in Headers */,
 				0AA988DC1E5BE84300D5E065 /* WeexSVGPlugin.h in Headers */,
 				0AA989271E5BE87D00D5E065 /* WXSVGLine.h in Headers */,
 				0AA9892F1E5BE87D00D5E065 /* WXSVGContainer.h in Headers */,
@@ -426,6 +457,7 @@
 				0AA989211E5BE87D00D5E065 /* WXSVGPathParser.h in Headers */,
 				0AA1CE2F1E82A67800E18EB9 /* WXSVGLinearGradientComponent.h in Headers */,
 				0A3E5EE61E84F66F00F1E5FD /* WXSVGPolyline.h in Headers */,
+				0A9EF76D1E88EC24009E517C /* WXSVGStop.h in Headers */,
 				0AA989111E5BE87D00D5E065 /* WXSVGBrushConverter.h in Headers */,
 				0AA9890F1E5BE87D00D5E065 /* WXSVGBrush.h in Headers */,
 				0AA9891B1E5BE87D00D5E065 /* WXSVGNodeComponent.h in Headers */,
@@ -614,12 +646,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA989201E5BE87D00D5E065 /* WXConvert+WXSVG.m in Sources */,
+				0AF497041E88B0870072837A /* WXSVGDefs.m in Sources */,
 				0A3E5EE71E84F66F00F1E5FD /* WXSVGPolyline.m in Sources */,
 				0AA9892E1E5BE87D00D5E065 /* WXSVGSvgView.m in Sources */,
 				0AA1CE4B1E82AA1E00E18EB9 /* WXSVGPathComponent.m in Sources */,
 				0AA1CE251E82A37100E18EB9 /* WXSVGPath.m in Sources */,
 				0AAB38091E84D0BD00311607 /* WXSVGPolygon.m in Sources */,
 				0AA989101E5BE87D00D5E065 /* WXSVGBrush.m in Sources */,
+				0A3E5F021E85167D00F1E5FD /* WXSVGStopComponent.m in Sources */,
 				0AA1CE4E1E82AA1E00E18EB9 /* WXSVGRectComponent.m in Sources */,
 				0AA989121E5BE87D00D5E065 /* WXSVGBrushConverter.m in Sources */,
 				0AA989161E5BE87D00D5E065 /* WXSVGCircleComponent.m in Sources */,
@@ -627,11 +661,13 @@
 				0AA1CE3A1E82A73D00E18EB9 /* NSDictionary+WXSVG.m in Sources */,
 				0AA989261E5BE87D00D5E065 /* WXSVGCircle.m in Sources */,
 				0AA989181E5BE87D00D5E065 /* WXSVGComponent.m in Sources */,
+				0A9EF76E1E88EC24009E517C /* WXSVGStop.m in Sources */,
 				0AAB38041E84D08600311607 /* WXSVGPolygonComponent.m in Sources */,
 				0AA1CE231E82A37100E18EB9 /* WXSVGGroup.m in Sources */,
 				0AA9891A1E5BE87D00D5E065 /* WXSVGLineComponent.m in Sources */,
 				0AA9892A1E5BE87D00D5E065 /* WXSVGNode.m in Sources */,
 				0AA989241E5BE87D00D5E065 /* WXSVGPercentageConverter.m in Sources */,
+				0A3E5EFD1E85166300F1E5FD /* WXSVGDefsComponent.m in Sources */,
 				0AA989141E5BE87D00D5E065 /* WXSVGSolidColorBrush.m in Sources */,
 				0AA9891E1E5BE87D00D5E065 /* WXSVGRenderableComponent.m in Sources */,
 				0AA1CE531E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.m in Sources */,
@@ -656,12 +692,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AAB380A1E84D0BD00311607 /* WXSVGPolygon.m in Sources */,
+				0A9EF76F1E88EC24009E517C /* WXSVGStop.m in Sources */,
+				0AF497051E88B0870072837A /* WXSVGDefs.m in Sources */,
 				0AA1CE4F1E82AA1E00E18EB9 /* WXSVGRectComponent.m in Sources */,
 				0AA1CE461E82AA1E00E18EB9 /* WXSVGEllipseComponent.m in Sources */,
+				0A3E5F031E85167D00F1E5FD /* WXSVGStopComponent.m in Sources */,
 				0A3E5EE81E84F66F00F1E5FD /* WXSVGPolyline.m in Sources */,
 				0AA1CE381E82A73D00E18EB9 /* NSArray+WXSVG.m in Sources */,
 				0AA1CE3B1E82A73D00E18EB9 /* NSDictionary+WXSVG.m in Sources */,
 				0AA1CE311E82A67800E18EB9 /* WXSVGLinearGradientComponent.m in Sources */,
+				0A3E5EFE1E85166300F1E5FD /* WXSVGDefsComponent.m in Sources */,
 				0A3E5EED1E84F82100F1E5FD /* WXSVGPolylineComponent.m in Sources */,
 				0AA1CE2C1E82A3CF00E18EB9 /* WXSVGLinearGradient.m in Sources */,
 				0AA1CE591E82AAC100E18EB9 /* WXSVGRadialGradient.m in Sources */,

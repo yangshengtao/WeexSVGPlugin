@@ -14,13 +14,13 @@
 
 @interface WXConvert (WXSVG)
 
-+ (CGPathRef)CGPath:(NSString *)d;
+
++ (CGPathRef)CGPath:(NSString *)d withScale:(CGFloat)scale;
 + (CTTextAlignment)CTTextAlignment:(id)json;
 + (WXSVGCGFCRule)RNSVGCGFCRule:(id)json;
 //+ (WXSVGTextFrame)RNSVGTextFrame:(id)json;
 + (WXSVGCGFloatArray)WXSVGCGFloatArray:(id)json;
 + (WXSVGBrush *)WXSVGBrush:(id)json;
-+ (WXSVGBrush *)WXSVGCGColor:(id)value;
 
 
 + (NSArray *)WXSVGBezier:(id)json;
@@ -29,5 +29,8 @@
 + (CGGradientRef)CGGradient:(id)json offset:(NSUInteger)offset;
 + (NSArray *) colorWithHex:(NSInteger)hexValue;
 + (CGPoint)CGPoint:(id)json;
+
++ (WXSVGBrush *)WXSVGCGColor:(id)value;
++ (WXSVGCGFloatArray)WXSVGConvertColor:(NSString *)color;
 
 @end

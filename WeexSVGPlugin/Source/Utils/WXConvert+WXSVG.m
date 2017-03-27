@@ -29,9 +29,9 @@ WX_JSON_CONVERTER(NSString)
 WX_JSON_CONVERTER(NSNumber)
 
 
-+ (CGPathRef)CGPath:(NSString *)d
++ (CGPathRef)CGPath:(NSString *)d withScale:(CGFloat)scale;
 {
-    return [[[WXSVGPathParser alloc] initWithPathString: d] getPath];
+    return [[[WXSVGPathParser alloc] initWithPathString:d withScale:scale] getPath];
 }
 
 /*
@@ -165,7 +165,49 @@ RCT_ENUM_CONVERTER(RNSVGVBMOS, (@{
 
 + (WXSVGBrush *)WXSVGCGColor:(id)value
 {
-    return [[WXSVGSolidColorBrush alloc] initWithColor:value];
+    NSArray *arr = [self parserColorPros:value];
+    NSUInteger type = [self NSUInteger:arr.firstObject];
+    switch (type) {
+        case 0:
+            return [[WXSVGSolidColorBrush alloc] initWithColor:value];
+        case 1:
+            return [[WXSVGBaseBrush alloc] initWithArray:arr];
+        default:
+            return nil;
+    }
+}
+
++ (WXSVGCGFloatArray)WXSVGConvertColor:(NSString *)color
+{
+    NSArray *arr = [color componentsSeparatedByString:@","];
+    NSUInteger count = arr.count;
+    
+    WXSVGCGFloatArray array;
+    array.count = count;
+    array.array = nil;
+    
+    if (count) {
+        // Ideally, these arrays should already use the same memory layout.
+        // In that case we shouldn't need this new malloc.
+        array.array = malloc(sizeof(CGFloat) * count);
+        for (NSUInteger i = 0; i < count; i++) {
+            array.array[i] = [arr[i] doubleValue];
+        }
+    }
+    
+    return array;
+}
+
++ (NSArray *)parserColorPros:(NSString *)colorPros
+{
+    if ([colorPros hasPrefix:@"url"]) {
+        NSString* formaterStr = [colorPros stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"()"]];
+        if ([formaterStr length] > 3) {
+            NSString *urlId = [formaterStr substringFromIndex:5];
+            return @[@(1),urlId];
+        }
+    }
+    return @[@(0),colorPros];
 }
 
 /*
@@ -285,7 +327,7 @@ RCT_ENUM_CONVERTER(RNSVGVBMOS, (@{
 
 + (CGGradientRef)CGGradient:(id)json offset:(NSUInteger)offset
 {
-    NSArray *arr = [self NSArray:json];
+    /*NSArray *arr = [self NSArray:json];
     if (arr.count < offset) {
         
         return nil;
@@ -305,6 +347,15 @@ RCT_ENUM_CONVERTER(RNSVGVBMOS, (@{
     
     CGColorSpaceRelease(rgb);
     free(colorsAndOffsets.array);
+    return (CGGradientRef)CFAutorelease(gradient);*/
+    NSArray *arr = [self NSArray:json];
+    CGColorSpaceRef rgb = CGColorSpaceCreateDeviceRGB();
+    CGFloat colors[arr.count];
+    for (NSUInteger i = 0; i < arr.count; i++) {
+        colors[i] = [arr[i] floatValue];
+    }
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(rgb, colors, NULL, sizeof(colors)/(sizeof(colors[0])*4));
+    CGColorSpaceRelease(rgb);
     return (CGGradientRef)CFAutorelease(gradient);
 }
 

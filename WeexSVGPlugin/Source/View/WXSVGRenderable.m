@@ -280,6 +280,7 @@
     _heightConverter = [[WXSVGPercentageConverter alloc] initWithRelativeAndOffset:boundingBox.size.height offset:0];
 }
 
+
 - (CGFloat)getWidthRelatedValue:(NSString *)string
 {
     if (string) {

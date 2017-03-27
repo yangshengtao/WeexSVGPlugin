@@ -7,6 +7,7 @@
 //
 
 #import "WXSVGPathParser.h"
+#import <WeexSDK/WeexSDK.h>
 
 @implementation WXSVGPathParser
 {
@@ -21,11 +22,13 @@
     double _pivotY;
     BOOL _valid;
     BOOL _penDownSet;
+    CGFloat _scale;
 }
 
-- (instancetype) initWithPathString:(NSString *)d
+- (instancetype) initWithPathString:(NSString *)d withScale:(CGFloat)scale
 {
     if (self = [super init]) {
+        _scale = scale;
         NSRegularExpression* decimalRegularExpression = [[NSRegularExpression alloc] initWithPattern:@"(\\.\\d+)(?=\\-?\\.)" options:0 error:nil];
         _originD = d;
         _d = [decimalRegularExpression stringByReplacingMatchesInString:d options:0 range:NSMakeRange(0, [d length]) withTemplate:@"$1\,"];
@@ -125,7 +128,7 @@
 
 - (double)double:(NSString *)value
 {
-    return [value doubleValue];
+    return [WXConvert WXPixelType:value scaleFactor:_scale];
 }
 
 - (BOOL)bool:(NSString *)value

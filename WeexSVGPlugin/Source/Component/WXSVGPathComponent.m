@@ -35,7 +35,7 @@
 - (WXSVGPath *)node
 {
     WXSVGPath *pathView = [WXSVGPath new];
-    pathView.d = [WXConvert CGPath:_d];
+    pathView.d = [WXConvert CGPath:_d withScale:self.weexInstance.pixelScaleFactor];
     [self syncViewAttributes:pathView];
     return pathView;
 }

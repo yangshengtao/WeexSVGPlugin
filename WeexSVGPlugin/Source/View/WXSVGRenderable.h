@@ -8,11 +8,7 @@
 
 #import "WXSVGNode.h"
 #import "WXSVGBrush.h"
-
-typedef struct {
-    size_t count;
-    CGFloat *array;
-} WXSVGCGFloatArray;
+#import <WeexSDK/WeexSDK.h>
 
 @interface WXSVGRenderable : WXSVGNode
 

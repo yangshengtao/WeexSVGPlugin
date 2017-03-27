@@ -109,6 +109,11 @@
     }
 }
 
+- (void)addGradientStopColor:(NSString *)stopColor
+{
+    // abstract
+}
+
 - (void)mergeProperties:(__kindof WXSVGNode *)target mergeList:(NSArray<NSString *> *)mergeList
 {
     // abstract
