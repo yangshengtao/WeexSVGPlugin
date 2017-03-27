@@ -30,6 +30,8 @@ typedef struct {
 @property (nonatomic, assign) CGAffineTransform matrix;
 @property (nonatomic, assign) BOOL active;
 
+@property (nonatomic, strong) NSMutableArray *gradient;
+
 - (void)invalidate;
 
 - (void)renderTo:(CGContextRef)context;

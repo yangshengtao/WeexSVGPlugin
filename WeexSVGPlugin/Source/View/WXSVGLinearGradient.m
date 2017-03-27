@@ -7,7 +7,6 @@
 //
 
 #import "WXSVGLinearGradient.h"
-#import <WeexSDK/WeexSDK.h>
 
 @implementation WXSVGLinearGradient
 
@@ -45,30 +44,6 @@
     }
     [self invalidate];
     _y2 = y2;
-}
-
-- (void)setGradient:(NSArray *)gradient
-{
-    if (gradient == _gradient) {
-        return;
-    }
-    
-    _gradient = gradient;
-    [self invalidate];
-}
-
-- (void)addGradientStopColor:(NSString *)stopColor
-{
-    if (!_gradient) {
-        _gradient = [[NSMutableArray alloc] initWithCapacity:5];
-    }
-    UIColor *color = [WXConvert UIColor:stopColor];
-    const CGFloat *components = CGColorGetComponents(color.CGColor);
-    if (CGColorGetNumberOfComponents(color.CGColor) > 3) {
-        for (NSUInteger i = 0; i < 4; i++) {
-            [_gradient addObject:[NSNumber numberWithFloat:components[i]]];
-        }
-    }
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event

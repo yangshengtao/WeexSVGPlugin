@@ -32,10 +32,9 @@
     if (!_points || (_points.count <= 0)) {
         return nil;
     }
-    NSMutableArray *polygonArr = [NSMutableArray arrayWithArray:_points];
-    for (int idx = 0; idx < polygonArr.count; idx++) {
-        NSArray *pointArr = [polygonArr[idx] componentsSeparatedByString:@","];
-        CGPoint point = [WXConvert CGPoint:pointArr];
+    NSMutableArray *polyArr = [NSMutableArray arrayWithArray:_points];
+    for (int idx = 0; idx < polyArr.count; idx++) {
+        CGPoint point = [WXConvert CGPoint:polyArr[idx]];
         if (idx == 0) {
             //move to the first point
             CGPathMoveToPoint(path, nil, point.x, point.y);

@@ -29,6 +29,7 @@
 + (CGGradientRef)CGGradient:(id)json offset:(NSUInteger)offset;
 + (NSArray *) colorWithHex:(NSInteger)hexValue;
 + (CGPoint)CGPoint:(id)json;
++ (CGPoint)CGPoint:(id)json withScale:(CGFloat)scale;
 
 + (WXSVGBrush *)WXSVGCGColor:(id)value;
 + (WXSVGCGFloatArray)WXSVGConvertColor:(NSString *)color;

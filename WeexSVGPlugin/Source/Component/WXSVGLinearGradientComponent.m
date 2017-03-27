@@ -8,7 +8,6 @@
 
 #import "WXSVGLinearGradientComponent.h"
 #import "WXSVGLinearGradient.h"
-#import "WXSVGPercentageConverter.h"
 #import <WeexSDK/WeexSDK.h>
 
 @implementation WXSVGLinearGradientComponent
@@ -18,7 +17,6 @@
     NSString *_y1;
     NSString *_x2;
     NSString *_y2;
-    NSArray<NSNumber *> *_gradient;
     
     WXSVGLinearGradient *_linearView;
 }
@@ -39,7 +37,6 @@
         _x2 = attributes[@"x2"];
         _y1 = attributes[@"y1"];
         _y2 = attributes[@"y2"];
-        _gradient = [attributes wxmap_safeObjectForKey:@"gradient"];
     }
     return self;
 }
@@ -56,19 +53,6 @@
         [self syncViewAttributes:_linearView];
     }
     return _linearView;
-}
-
-- (NSString *)formatterPoint:(NSString *)point
-{
-    NSString *formatterStr = nil;
-    WXSVGPercentageConverter* convert = [[WXSVGPercentageConverter alloc] init];
-    if ([convert isPercentage:point] != NO) {
-        formatterStr = point;
-    }else {
-        CGFloat x1 = [WXConvert WXPixelType:point scaleFactor:self.weexInstance.pixelScaleFactor];
-         formatterStr = [NSString stringWithFormat:@"%f",x1];
-    }
-    return formatterStr ? : @"";
 }
 
 

@@ -23,10 +23,7 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        NSString *pointSrt = attributes[@"points"];
-        if (pointSrt) {
-            _points = [pointSrt componentsSeparatedByString:@" "];
-        }
+        
     }
     
     return self;
@@ -37,9 +34,23 @@
 - (WXSVGRenderable *)node
 {
     WXSVGPolyline *polylineView = [WXSVGPolyline new];
+    [self formatterPointStr:self.attributes[@"points"]];
     polylineView.points = _points;
     [self syncViewAttributes:polylineView];
     return polylineView;
+}
+
+- (void)formatterPointStr:(NSString *)pointStr
+{
+    NSArray *tmpArr = [pointStr componentsSeparatedByString:@" "];
+    NSUInteger count = tmpArr.count;
+    NSMutableArray *points = [[NSMutableArray alloc] initWithCapacity:tmpArr.count];
+    for (int idx = 0; idx < tmpArr.count; idx++) {
+        NSArray *pointArr = [tmpArr[idx] componentsSeparatedByString:@","];
+        CGPoint point = [WXConvert CGPoint:pointArr withScale:self.weexInstance.pixelScaleFactor];
+        [points addObject:@[@(point.x),@(point.y)]];
+    }
+    _points = [NSArray arrayWithArray:points];
 }
 
 @end

@@ -33,8 +33,26 @@
 - (WXSVGRenderable *)node
 {
     WXSVGPolygon *polygonView = [WXSVGPolygon new];
+    [self formatterPointStr:self.attributes[@"points"]];
     polygonView.points = self.points;
     [self syncViewAttributes:polygonView];
     return polygonView;
+}
+
+- (void)formatterPointStr:(NSString *)pointStr
+{
+    NSArray *tmpArr = [pointStr componentsSeparatedByString:@" "];
+    NSMutableArray *polygonArr = [NSMutableArray arrayWithArray:tmpArr];
+    if (![tmpArr.lastObject isEqualToString:tmpArr.firstObject]) {
+        [polygonArr addObject:tmpArr.firstObject];
+    }
+    NSUInteger count = polygonArr.count;
+    NSMutableArray *points = [[NSMutableArray alloc] initWithCapacity:polygonArr.count];
+    for (int idx = 0; idx < polygonArr.count; idx++) {
+        NSArray *pointArr = [polygonArr[idx] componentsSeparatedByString:@","];
+        CGPoint point = [WXConvert CGPoint:pointArr withScale:self.weexInstance.pixelScaleFactor];
+        [points addObject:@[@(point.x),@(point.y)]];
+    }
+    self.points = [NSArray arrayWithArray:points];
 }
 @end

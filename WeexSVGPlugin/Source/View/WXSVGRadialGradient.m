@@ -10,14 +10,57 @@
 
 @implementation WXSVGRadialGradient
 
-- (void)setGradient:(NSArray<NSNumber *> *)gradient
+- (void)setFx:(NSString *)fx
 {
-    if (gradient == _gradient) {
+    if (fx == _fx) {
         return;
     }
-    
-    _gradient = gradient;
     [self invalidate];
+    _fx = fx;
+}
+
+- (void)setFy:(NSString *)fy
+{
+    if (fy == _fy) {
+        return;
+    }
+    [self invalidate];
+    _fy = fy;
+}
+
+- (void)setRx:(NSString *)rx
+{
+    if (rx == _rx) {
+        return;
+    }
+    [self invalidate];
+    _rx = rx;
+}
+
+- (void)setRy:(NSString *)ry
+{
+    if (ry == _ry) {
+        return;
+    }
+    [self invalidate];
+    _ry = ry;
+}
+
+- (void)setCx:(NSString *)cx
+{
+    if (cx == _cx) {
+        return;
+    }
+    [self invalidate];
+    _cx = cx;
+}
+
+- (void)setCy:(NSString *)cy
+{
+    if (cy == _cy) {
+        return;
+    }
+    _cy = cy;
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event

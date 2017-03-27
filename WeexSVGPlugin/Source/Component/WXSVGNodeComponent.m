@@ -7,6 +7,7 @@
 //
 
 #import "WXSVGNodeComponent.h"
+#import "WXSVGPercentageConverter.h"
 
 @implementation WXSVGNodeComponent
 
@@ -97,6 +98,22 @@
 - (void)syncViewAttributes:(WXSVGNode *)view
 {
     view.matrix = CGAffineTransformMake(1, 0, 0, 1, 0, 0);
+}
+
+- (NSString *)formatterPoint:(NSString *)point
+{
+    NSString *formatterStr = nil;
+    if (!point) {
+        return @"";
+    }
+    WXSVGPercentageConverter* convert = [[WXSVGPercentageConverter alloc] init];
+    if ([convert isPercentage:point] != NO) {
+        formatterStr = point;
+    }else {
+        CGFloat x1 = [WXConvert WXPixelType:point scaleFactor:self.weexInstance.pixelScaleFactor];
+        formatterStr = [NSString stringWithFormat:@"%f",x1];
+    }
+    return formatterStr ? : @"";
 }
 
 @end

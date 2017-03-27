@@ -290,6 +290,16 @@ RCT_ENUM_CONVERTER(RNSVGVBMOS, (@{
     return CGPointMake([arr[0] floatValue], [arr[1] floatValue]);
 }
 
++ (CGPoint)CGPoint:(id)json withScale:(CGFloat)scale
+{
+    NSArray *arr = [self NSArray:json];
+    if (arr.count <= 1) {
+        return CGPointZero;
+    }
+    return CGPointMake([WXConvert WXPixelType:arr[0] scaleFactor:scale],
+                       [WXConvert WXPixelType:arr[1] scaleFactor:scale]);
+}
+
 + (CGColorRef)CGColor:(id)json offset:(NSUInteger)offset
 {
     NSArray *arr = [self NSArray:json];

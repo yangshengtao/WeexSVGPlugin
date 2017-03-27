@@ -8,6 +8,7 @@
 
 #import "WXSVGNode.h"
 #import "WXSVGContainer.h"
+#import <WeexSDK/WeexSDK.h>
 
 @implementation WXSVGNode
 {
@@ -111,7 +112,16 @@
 
 - (void)addGradientStopColor:(NSString *)stopColor
 {
-    // abstract
+    if (!_gradient) {
+        _gradient = [[NSMutableArray alloc] initWithCapacity:5];
+    }
+    UIColor *color = [WXConvert UIColor:stopColor];
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    if (CGColorGetNumberOfComponents(color.CGColor) > 3) {
+        for (NSUInteger i = 0; i < 4; i++) {
+            [_gradient addObject:[NSNumber numberWithFloat:components[i]]];
+        }
+    }
 }
 
 - (void)mergeProperties:(__kindof WXSVGNode *)target mergeList:(NSArray<NSString *> *)mergeList

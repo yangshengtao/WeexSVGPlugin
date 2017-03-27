@@ -9,6 +9,7 @@
 #import <WeexSDK/WeexSDK.h>
 #import "WXSVGNode.h"
 #import "NSDictionary+WXSVG.h"
+#import "WXConvert+WXSVG.h"
 
 @interface WXSVGNodeComponent : WXComponent
 
@@ -23,5 +24,8 @@
 - (WXSVGNode *)node;
 
 - (void)syncViewAttributes:(WXSVGNode *)view;
+
+- (NSString *)formatterPoint:(NSString *)point;
+
 
 @end
