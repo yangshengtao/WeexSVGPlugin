@@ -22,7 +22,7 @@
 
 - (instancetype)initWithArray:(NSArray *)data NS_DESIGNATED_INITIALIZER;
 
-- (instancetype)initWithColor:(id)value;
+- (instancetype)initWithColor:(id)value NS_DESIGNATED_INITIALIZER;
 
 /**
  * For certain brushes we can fast path a combined fill and stroke.

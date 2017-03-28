@@ -31,7 +31,7 @@
         _scale = scale;
         NSRegularExpression* decimalRegularExpression = [[NSRegularExpression alloc] initWithPattern:@"(\\.\\d+)(?=\\-?\\.)" options:0 error:nil];
         _originD = d;
-        _d = [decimalRegularExpression stringByReplacingMatchesInString:d options:0 range:NSMakeRange(0, [d length]) withTemplate:@"$1\,"];
+        _d = [decimalRegularExpression stringByReplacingMatchesInString:d options:0 range:NSMakeRange(0, [d length]) withTemplate:@"$1,"];
         _pathRegularExpression = [[NSRegularExpression alloc] initWithPattern:@"[a-df-z]|[\\-+]?(?:[\\d.]e[\\-+]?|[^\\s\\-+,a-z])+" options:NSRegularExpressionCaseInsensitive error:nil];
     }
     return self;
