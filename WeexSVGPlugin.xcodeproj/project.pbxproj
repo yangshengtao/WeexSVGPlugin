@@ -6,17 +6,31 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0A8FDA6D1E8A15DB00A6E2C1 /* Weexplugin-package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0A8FDA701E8A15DB00A6E2C1 /* Build configuration list for PBXAggregateTarget "Weexplugin-package" */;
+			buildPhases = (
+				0A8FDA711E8A164800A6E2C1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Weexplugin-package";
+			productName = "Weexplugin-package";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0A3E5EE61E84F66F00F1E5FD /* WXSVGPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EE41E84F66F00F1E5FD /* WXSVGPolyline.h */; };
 		0A3E5EE71E84F66F00F1E5FD /* WXSVGPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EE51E84F66F00F1E5FD /* WXSVGPolyline.m */; };
 		0A3E5EE81E84F66F00F1E5FD /* WXSVGPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EE51E84F66F00F1E5FD /* WXSVGPolyline.m */; };
-		0A3E5EEB1E84F82100F1E5FD /* WXSVGPolylineComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EE91E84F82100F1E5FD /* WXSVGPolylineComponent.h */; };
+		0A3E5EEB1E84F82100F1E5FD /* WXSVGPolylineComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EE91E84F82100F1E5FD /* WXSVGPolylineComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3E5EEC1E84F82100F1E5FD /* WXSVGPolylineComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EEA1E84F82100F1E5FD /* WXSVGPolylineComponent.m */; };
 		0A3E5EED1E84F82100F1E5FD /* WXSVGPolylineComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EEA1E84F82100F1E5FD /* WXSVGPolylineComponent.m */; };
-		0A3E5EFC1E85166300F1E5FD /* WXSVGDefsComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EFA1E85166300F1E5FD /* WXSVGDefsComponent.h */; };
+		0A3E5EFC1E85166300F1E5FD /* WXSVGDefsComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EFA1E85166300F1E5FD /* WXSVGDefsComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3E5EFD1E85166300F1E5FD /* WXSVGDefsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EFB1E85166300F1E5FD /* WXSVGDefsComponent.m */; };
 		0A3E5EFE1E85166300F1E5FD /* WXSVGDefsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EFB1E85166300F1E5FD /* WXSVGDefsComponent.m */; };
-		0A3E5F011E85167D00F1E5FD /* WXSVGStopComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EFF1E85167D00F1E5FD /* WXSVGStopComponent.h */; };
+		0A3E5F011E85167D00F1E5FD /* WXSVGStopComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3E5EFF1E85167D00F1E5FD /* WXSVGStopComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3E5F021E85167D00F1E5FD /* WXSVGStopComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5F001E85167D00F1E5FD /* WXSVGStopComponent.m */; };
 		0A3E5F031E85167D00F1E5FD /* WXSVGStopComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5F001E85167D00F1E5FD /* WXSVGStopComponent.m */; };
 		0A9EF76D1E88EC24009E517C /* WXSVGStop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9EF76B1E88EC24009E517C /* WXSVGStop.h */; };
@@ -33,7 +47,7 @@
 		0AA1CE2A1E82A3CF00E18EB9 /* WXSVGLinearGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE281E82A3CF00E18EB9 /* WXSVGLinearGradient.h */; };
 		0AA1CE2B1E82A3CF00E18EB9 /* WXSVGLinearGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE291E82A3CF00E18EB9 /* WXSVGLinearGradient.m */; };
 		0AA1CE2C1E82A3CF00E18EB9 /* WXSVGLinearGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE291E82A3CF00E18EB9 /* WXSVGLinearGradient.m */; };
-		0AA1CE2F1E82A67800E18EB9 /* WXSVGLinearGradientComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE2D1E82A67800E18EB9 /* WXSVGLinearGradientComponent.h */; };
+		0AA1CE2F1E82A67800E18EB9 /* WXSVGLinearGradientComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE2D1E82A67800E18EB9 /* WXSVGLinearGradientComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA1CE301E82A67800E18EB9 /* WXSVGLinearGradientComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE2E1E82A67800E18EB9 /* WXSVGLinearGradientComponent.m */; };
 		0AA1CE311E82A67800E18EB9 /* WXSVGLinearGradientComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE2E1E82A67800E18EB9 /* WXSVGLinearGradientComponent.m */; };
 		0AA1CE361E82A73D00E18EB9 /* NSArray+WXSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE321E82A73D00E18EB9 /* NSArray+WXSVG.h */; };
@@ -42,19 +56,19 @@
 		0AA1CE391E82A73D00E18EB9 /* NSDictionary+WXSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE341E82A73D00E18EB9 /* NSDictionary+WXSVG.h */; };
 		0AA1CE3A1E82A73D00E18EB9 /* NSDictionary+WXSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE351E82A73D00E18EB9 /* NSDictionary+WXSVG.m */; };
 		0AA1CE3B1E82A73D00E18EB9 /* NSDictionary+WXSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE351E82A73D00E18EB9 /* NSDictionary+WXSVG.m */; };
-		0AA1CE441E82AA1E00E18EB9 /* WXSVGEllipseComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE3C1E82AA1E00E18EB9 /* WXSVGEllipseComponent.h */; };
+		0AA1CE441E82AA1E00E18EB9 /* WXSVGEllipseComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE3C1E82AA1E00E18EB9 /* WXSVGEllipseComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA1CE451E82AA1E00E18EB9 /* WXSVGEllipseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE3D1E82AA1E00E18EB9 /* WXSVGEllipseComponent.m */; };
 		0AA1CE461E82AA1E00E18EB9 /* WXSVGEllipseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE3D1E82AA1E00E18EB9 /* WXSVGEllipseComponent.m */; };
 		0AA1CE471E82AA1E00E18EB9 /* WXSVGGroupComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE3E1E82AA1E00E18EB9 /* WXSVGGroupComponent.h */; };
 		0AA1CE481E82AA1E00E18EB9 /* WXSVGGroupComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE3F1E82AA1E00E18EB9 /* WXSVGGroupComponent.m */; };
 		0AA1CE491E82AA1E00E18EB9 /* WXSVGGroupComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE3F1E82AA1E00E18EB9 /* WXSVGGroupComponent.m */; };
-		0AA1CE4A1E82AA1E00E18EB9 /* WXSVGPathComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE401E82AA1E00E18EB9 /* WXSVGPathComponent.h */; };
+		0AA1CE4A1E82AA1E00E18EB9 /* WXSVGPathComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE401E82AA1E00E18EB9 /* WXSVGPathComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA1CE4B1E82AA1E00E18EB9 /* WXSVGPathComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE411E82AA1E00E18EB9 /* WXSVGPathComponent.m */; };
 		0AA1CE4C1E82AA1E00E18EB9 /* WXSVGPathComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE411E82AA1E00E18EB9 /* WXSVGPathComponent.m */; };
-		0AA1CE4D1E82AA1E00E18EB9 /* WXSVGRectComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE421E82AA1E00E18EB9 /* WXSVGRectComponent.h */; };
+		0AA1CE4D1E82AA1E00E18EB9 /* WXSVGRectComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE421E82AA1E00E18EB9 /* WXSVGRectComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA1CE4E1E82AA1E00E18EB9 /* WXSVGRectComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE431E82AA1E00E18EB9 /* WXSVGRectComponent.m */; };
 		0AA1CE4F1E82AA1E00E18EB9 /* WXSVGRectComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE431E82AA1E00E18EB9 /* WXSVGRectComponent.m */; };
-		0AA1CE521E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE501E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.h */; };
+		0AA1CE521E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE501E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA1CE531E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE511E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.m */; };
 		0AA1CE541E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1CE511E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.m */; };
 		0AA1CE571E82AAC100E18EB9 /* WXSVGRadialGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1CE551E82AAC100E18EB9 /* WXSVGRadialGradient.h */; };
@@ -71,11 +85,11 @@
 		0AA989121E5BE87D00D5E065 /* WXSVGBrushConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988EC1E5BE87D00D5E065 /* WXSVGBrushConverter.m */; };
 		0AA989131E5BE87D00D5E065 /* WXSVGSolidColorBrush.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988ED1E5BE87D00D5E065 /* WXSVGSolidColorBrush.h */; };
 		0AA989141E5BE87D00D5E065 /* WXSVGSolidColorBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988EE1E5BE87D00D5E065 /* WXSVGSolidColorBrush.m */; };
-		0AA989151E5BE87D00D5E065 /* WXSVGCircleComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F01E5BE87D00D5E065 /* WXSVGCircleComponent.h */; };
+		0AA989151E5BE87D00D5E065 /* WXSVGCircleComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F01E5BE87D00D5E065 /* WXSVGCircleComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA989161E5BE87D00D5E065 /* WXSVGCircleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F11E5BE87D00D5E065 /* WXSVGCircleComponent.m */; };
-		0AA989171E5BE87D00D5E065 /* WXSVGComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F21E5BE87D00D5E065 /* WXSVGComponent.h */; };
+		0AA989171E5BE87D00D5E065 /* WXSVGComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F21E5BE87D00D5E065 /* WXSVGComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA989181E5BE87D00D5E065 /* WXSVGComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F31E5BE87D00D5E065 /* WXSVGComponent.m */; };
-		0AA989191E5BE87D00D5E065 /* WXSVGLineComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F41E5BE87D00D5E065 /* WXSVGLineComponent.h */; };
+		0AA989191E5BE87D00D5E065 /* WXSVGLineComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F41E5BE87D00D5E065 /* WXSVGLineComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA9891A1E5BE87D00D5E065 /* WXSVGLineComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F51E5BE87D00D5E065 /* WXSVGLineComponent.m */; };
 		0AA9891B1E5BE87D00D5E065 /* WXSVGNodeComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA988F61E5BE87D00D5E065 /* WXSVGNodeComponent.h */; };
 		0AA9891C1E5BE87D00D5E065 /* WXSVGNodeComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA988F71E5BE87D00D5E065 /* WXSVGNodeComponent.m */; };
@@ -98,7 +112,7 @@
 		0AA9892D1E5BE87D00D5E065 /* WXSVGSvgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA9890A1E5BE87D00D5E065 /* WXSVGSvgView.h */; };
 		0AA9892E1E5BE87D00D5E065 /* WXSVGSvgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA9890B1E5BE87D00D5E065 /* WXSVGSvgView.m */; };
 		0AA9892F1E5BE87D00D5E065 /* WXSVGContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA9890C1E5BE87D00D5E065 /* WXSVGContainer.h */; };
-		0AAB38031E84D08600311607 /* WXSVGPolygonComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAB38011E84D08600311607 /* WXSVGPolygonComponent.h */; };
+		0AAB38031E84D08600311607 /* WXSVGPolygonComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAB38011E84D08600311607 /* WXSVGPolygonComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AAB38041E84D08600311607 /* WXSVGPolygonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB38021E84D08600311607 /* WXSVGPolygonComponent.m */; };
 		0AAB38051E84D08600311607 /* WXSVGPolygonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB38021E84D08600311607 /* WXSVGPolygonComponent.m */; };
 		0AAB38081E84D0BD00311607 /* WXSVGPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAB38061E84D0BD00311607 /* WXSVGPolygon.h */; };
@@ -420,42 +434,42 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA989251E5BE87D00D5E065 /* WXSVGCircle.h in Headers */,
 				0A3E5F011E85167D00F1E5FD /* WXSVGStopComponent.h in Headers */,
+				0A3E5EFC1E85166300F1E5FD /* WXSVGDefsComponent.h in Headers */,
 				0AA1CE521E82AA8A00E18EB9 /* WXSVGRadialGradientComponent.h in Headers */,
-				0AA1CE571E82AAC100E18EB9 /* WXSVGRadialGradient.h in Headers */,
+				0AA1CE441E82AA1E00E18EB9 /* WXSVGEllipseComponent.h in Headers */,
+				0AA1CE4D1E82AA1E00E18EB9 /* WXSVGRectComponent.h in Headers */,
 				0AA1CE4A1E82AA1E00E18EB9 /* WXSVGPathComponent.h in Headers */,
+				0AA1CE2F1E82A67800E18EB9 /* WXSVGLinearGradientComponent.h in Headers */,
+				0A3E5EEB1E84F82100F1E5FD /* WXSVGPolylineComponent.h in Headers */,
+				0AAB38031E84D08600311607 /* WXSVGPolygonComponent.h in Headers */,
+				0AA989191E5BE87D00D5E065 /* WXSVGLineComponent.h in Headers */,
+				0AA989251E5BE87D00D5E065 /* WXSVGCircle.h in Headers */,
+				0AA989171E5BE87D00D5E065 /* WXSVGComponent.h in Headers */,
+				0AA989151E5BE87D00D5E065 /* WXSVGCircleComponent.h in Headers */,
+				0AA1CE571E82AAC100E18EB9 /* WXSVGRadialGradient.h in Headers */,
 				0AAB38081E84D0BD00311607 /* WXSVGPolygon.h in Headers */,
 				0AA9891D1E5BE87D00D5E065 /* WXSVGRenderableComponent.h in Headers */,
 				0AA9891F1E5BE87D00D5E065 /* WXConvert+WXSVG.h in Headers */,
 				0AA9890D1E5BE87D00D5E065 /* WXSVGBaseBrush.h in Headers */,
-				0A3E5EEB1E84F82100F1E5FD /* WXSVGPolylineComponent.h in Headers */,
 				0AF497031E88B0870072837A /* WXSVGDefs.h in Headers */,
 				0AA1CE471E82AA1E00E18EB9 /* WXSVGGroupComponent.h in Headers */,
 				0AA989131E5BE87D00D5E065 /* WXSVGSolidColorBrush.h in Headers */,
-				0AA1CE441E82AA1E00E18EB9 /* WXSVGEllipseComponent.h in Headers */,
 				0AA1CE221E82A37100E18EB9 /* WXSVGGroup.h in Headers */,
-				0AA989151E5BE87D00D5E065 /* WXSVGCircleComponent.h in Headers */,
 				0AA989291E5BE87D00D5E065 /* WXSVGNode.h in Headers */,
-				0AAB38031E84D08600311607 /* WXSVGPolygonComponent.h in Headers */,
-				0A3E5EFC1E85166300F1E5FD /* WXSVGDefsComponent.h in Headers */,
 				0AA988DC1E5BE84300D5E065 /* WeexSVGPlugin.h in Headers */,
 				0AA989271E5BE87D00D5E065 /* WXSVGLine.h in Headers */,
 				0AA9892F1E5BE87D00D5E065 /* WXSVGContainer.h in Headers */,
 				0AA1CE2A1E82A3CF00E18EB9 /* WXSVGLinearGradient.h in Headers */,
 				0AA9892B1E5BE87D00D5E065 /* WXSVGRenderable.h in Headers */,
-				0AA1CE4D1E82AA1E00E18EB9 /* WXSVGRectComponent.h in Headers */,
 				0AA1CE361E82A73D00E18EB9 /* NSArray+WXSVG.h in Headers */,
 				0AA1CE261E82A37100E18EB9 /* WXSVGRect.h in Headers */,
 				0AA9892D1E5BE87D00D5E065 /* WXSVGSvgView.h in Headers */,
 				0AA1CE241E82A37100E18EB9 /* WXSVGPath.h in Headers */,
-				0AA989191E5BE87D00D5E065 /* WXSVGLineComponent.h in Headers */,
-				0AA989171E5BE87D00D5E065 /* WXSVGComponent.h in Headers */,
 				0AA1CE391E82A73D00E18EB9 /* NSDictionary+WXSVG.h in Headers */,
 				0AA989231E5BE87D00D5E065 /* WXSVGPercentageConverter.h in Headers */,
 				0AA1CE201E82A37100E18EB9 /* WXSVGEllipse.h in Headers */,
 				0AA989211E5BE87D00D5E065 /* WXSVGPathParser.h in Headers */,
-				0AA1CE2F1E82A67800E18EB9 /* WXSVGLinearGradientComponent.h in Headers */,
 				0A3E5EE61E84F66F00F1E5FD /* WXSVGPolyline.h in Headers */,
 				0A9EF76D1E88EC24009E517C /* WXSVGStop.h in Headers */,
 				0AA989111E5BE87D00D5E065 /* WXSVGBrushConverter.h in Headers */,
@@ -517,9 +531,13 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Taobao;
 				TargetAttributes = {
-					0AA988CA1E5BE84300D5E065 = {
+					0A8FDA6D1E8A15DB00A6E2C1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					0AA988CA1E5BE84300D5E065 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
 					};
 					0AA988D31E5BE84300D5E065 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -541,6 +559,7 @@
 			targets = (
 				0AA988CA1E5BE84300D5E065 /* WeexSVGPlugin */,
 				0AA988D31E5BE84300D5E065 /* WeexSVGPluginTests */,
+				0A8FDA6D1E8A15DB00A6E2C1 /* Weexplugin-package */,
 			);
 		};
 /* End PBXProject section */
@@ -563,6 +582,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A8FDA711E8A164800A6E2C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#要build的target名\nTARGET_NAME=${PROJECT_NAME}\nif [[ $1 ]]\nthen\nTARGET_NAME=$1\nfi\nUNIVERSAL_OUTPUT_FOLDER=\"${SRCROOT}/${PROJECT_NAME}_Products/\"\nbuild_workspace=\"${SRCROOT}/${PROJECT_NAME}.xcworkspace\"\n\n#创建输出目录，并删除之前的framework文件\nmkdir -p \"${UNIVERSAL_OUTPUT_FOLDER}\"\nrm -rf \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework\"\n\n#分别编译模拟器和真机的Framework\n# xcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n# xcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -workspace \"${build_workspace}\" -scheme \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -workspace \"${build_workspace}\" -scheme \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n#拷贝framework到univer目录\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework\" \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n#合并framework，输出最终的framework到build目录\nlipo -create -output \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}\"\n\n#删除编译之后生成的无关的配置文件\ndir_path=\"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/\"\nfor file in ls $dir_path\ndo\nif [[ ${file} =~ \".xcconfig\" ]]\nthen\nrm -f \"${dir_path}/${file}\"\nfi\ndone\n#判断build文件夹是否存在，存在则删除\nif [ -d \"${SRCROOT}/build\" ]\nthen\nrm -rf \"${SRCROOT}/build\"\nfi\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n#删除依赖类库中的resource文件\nset -e\n\nFMK_NAME_PATH=${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/\n\nMAIN=\"main\"\n\nMAIN_JS=${FMK_NAME_PATH}/${MAIN}.js\n\nif [ -e \"$MAIN_JS\" ]; then\nrm \"$MAIN_JS\"\nfi\n\nRESOURCE=\"Resources\"\nRESOURCE_DIR=${FMK_NAME_PATH}/$RESOURCE\nif [ -d \"$RESOURCE_DIR\" ]; then\nrm -rf \"$RESOURCE_DIR\"\nfi\n\nfor pngFile in ${FMK_NAME_PATH}/*; do\n                                if [[ $pngFile =~ (.*)png ]]; then\n                                rm \"$pngFile\"\n                                break;\n                                fi\n                                done\n                                \n                                #打开合并后的文件夹\n                                open \"${UNIVERSAL_OUTPUT_FOLDER}\"";
+		};
 		1998BDF1B06FE320336BDB5E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -724,6 +756,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0A8FDA6E1E8A15DB00A6E2C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A8FDA6F1E8A15DB00A6E2C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0AA988DD1E5BE84300D5E065 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -824,14 +872,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B2C137B2D001DBF58B914B1 /* Pods-WeexSVGPlugin.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WeexSVGPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.WeexSVGPlugin.WeexSVGPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -842,14 +894,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D55EB56264920428CE6BBF02 /* Pods-WeexSVGPlugin.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WeexSVGPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.WeexSVGPlugin.WeexSVGPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -881,6 +937,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A8FDA701E8A15DB00A6E2C1 /* Build configuration list for PBXAggregateTarget "Weexplugin-package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8FDA6E1E8A15DB00A6E2C1 /* Debug */,
+				0A8FDA6F1E8A15DB00A6E2C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0AA988C51E5BE84300D5E065 /* Build configuration list for PBXProject "WeexSVGPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

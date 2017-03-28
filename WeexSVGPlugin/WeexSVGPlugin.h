@@ -19,11 +19,17 @@ FOUNDATION_EXPORT const unsigned char WeexSVGPluginVersionString[];
 #ifdef __OBJC__
 
 #import "WXSVGComponent.h"
+#import "WXSVGPolylineComponent.h"
+#import "WXSVGPolygonComponent.h"
 #import "WXSVGCircleComponent.h"
-#import "WXSVGRenderableComponent.h"
-#import "WXSVGNodeComponent.h"
-#import "WXSVGRenderable.h"
-#import "WXSVGNode.h"
+#import "WXSVGEllipseComponent.h"
+#import "WXSVGPathComponent.h"
+#import "WXSVGRectComponent.h"
+#import "WXSVGLineComponent.h"
+#import "WXSVGLinearGradientComponent.h"
+#import "WXSVGRadialGradientComponent.h"
+#import "WXSVGDefsComponent.h"
+#import "WXSVGStopComponent.h"
 
 
 #endif /* __OBJC__ */
