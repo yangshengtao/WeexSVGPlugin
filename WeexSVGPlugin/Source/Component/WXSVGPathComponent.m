@@ -36,6 +36,9 @@
 {
     WXSVGPath *pathView = [WXSVGPath new];
     pathView.d = [WXConvert CGPath:_d withScale:self.weexInstance.pixelScaleFactor];
+    if (!self.attributes[@"fill"]) {
+        pathView.fill = [WXConvert WXSVGCGColor:@"#000000"];
+    }
     [self syncViewAttributes:pathView];
     return pathView;
 }

@@ -128,7 +128,7 @@
 
 - (double)double:(NSString *)value
 {
-    return [WXConvert WXPixelType:value scaleFactor:_scale];
+    return /*[value doubleValue];*/[WXConvert WXPixelType:value scaleFactor:_scale];
 }
 
 - (BOOL)bool:(NSString *)value
@@ -172,8 +172,8 @@
 
 - (void)curveTo:(CGPathRef)path c1x:(double)c1x c1y:(double)c1y c2x:(double)c2x c2y:(double)c2y ex:(double)ex ey:(double)ey
 {
-    _pivotX = ex;
-    _pivotY = ey;
+    _pivotX = c2x;
+    _pivotY = c2y;
     [self curveToPoint:path c1x:(double)c1x c1y:(double)c1y c2x:(double)c2x c2y:(double)c2y ex:(double)ex ey:(double)ey];
 }
 

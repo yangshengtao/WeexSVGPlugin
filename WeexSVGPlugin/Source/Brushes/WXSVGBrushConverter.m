@@ -14,6 +14,9 @@
 {
     
     CGGradientRef gradient = CGGradientRetain([WXConvert CGGradient:self.colors offset:0]);
+    if (!gradient) {
+        return;
+    }
     CGGradientDrawingOptions extendOptions = kCGGradientDrawsBeforeStartLocation | kCGGradientDrawsAfterEndLocation;
     
     CGRect box = CGContextGetClipBoundingBox(context);

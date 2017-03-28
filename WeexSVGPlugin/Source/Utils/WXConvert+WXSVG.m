@@ -25,7 +25,6 @@ WX_JSON_ARRAY_CONVERTER(NSNumber)
 
 WX_JSON_CONVERTER(NSArray)
 WX_JSON_CONVERTER(NSDictionary)
-WX_JSON_CONVERTER(NSString)
 WX_JSON_CONVERTER(NSNumber)
 
 
@@ -358,6 +357,9 @@ RCT_ENUM_CONVERTER(RNSVGVBMOS, (@{
     CGColorSpaceRelease(rgb);
     free(colorsAndOffsets.array);
     return (CGGradientRef)CFAutorelease(gradient);*/
+    if (!json) {
+        return nil;
+    }
     NSArray *arr = [self NSArray:json];
     CGColorSpaceRef rgb = CGColorSpaceCreateDeviceRGB();
     CGFloat colors[arr.count];

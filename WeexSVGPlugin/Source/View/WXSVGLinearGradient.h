@@ -14,7 +14,6 @@
 @property (nonatomic, copy) NSString *y1;
 @property (nonatomic, copy) NSString *x2;
 @property (nonatomic, copy) NSString *y2;
-@property (nonatomic, copy) NSString *name;
 
 
 @end

@@ -19,6 +19,11 @@
 
 #pragma mark -
 #pragma mark - public methods
+- (void)invalidate
+{
+    [self setNeedsDisplay];
+}
+
 - (void)render
 {
     [self setNeedsDisplay];

@@ -25,7 +25,7 @@
 - (WXSVGNode *)getDefinedTemplate:(NSString *)tempalteRef;
 - (void)defineBrushConverter:(WXSVGBrushConverter *)brushConverter brushConverterRef:(NSString *)brushConverterRef;
 - (WXSVGBrushConverter *)getDefinedBrushConverter:(NSString *)brushConverterRef;
-- (NSString *)getDataURL;
+//- (NSString *)getDataURL;
 
 - (void)render;
 

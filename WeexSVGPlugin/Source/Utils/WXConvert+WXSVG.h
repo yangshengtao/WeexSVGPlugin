@@ -16,14 +16,14 @@
 
 
 + (CGPathRef)CGPath:(NSString *)d withScale:(CGFloat)scale;
-+ (CTTextAlignment)CTTextAlignment:(id)json;
-+ (WXSVGCGFCRule)RNSVGCGFCRule:(id)json;
+//+ (CTTextAlignment)CTTextAlignment:(id)json;
+//+ (WXSVGCGFCRule)RNSVGCGFCRule:(id)json;
 //+ (WXSVGTextFrame)RNSVGTextFrame:(id)json;
 + (WXSVGCGFloatArray)WXSVGCGFloatArray:(id)json;
 + (WXSVGBrush *)WXSVGBrush:(id)json;
 
 
-+ (NSArray *)WXSVGBezier:(id)json;
+//+ (NSArray *)WXSVGBezier:(id)json;
 + (CGRect)CGRect:(id)json offset:(NSUInteger)offset;
 + (CGColorRef)CGColor:(id)json offset:(NSUInteger)offset;
 + (CGGradientRef)CGGradient:(id)json offset:(NSUInteger)offset;
