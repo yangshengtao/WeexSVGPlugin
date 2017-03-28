@@ -36,7 +36,6 @@
 
 - (void)viewDidLoad
 {
-    WXSVGStop *stopView = (WXSVGStop *)self.view;
     if (!_stopColor || [_stopColor isEqualToString:@""]) {
         return;
     }

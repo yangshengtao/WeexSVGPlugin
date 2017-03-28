@@ -18,6 +18,8 @@
 @property (nonatomic, strong) NSString* brushRef;
 
 /* @abstract */
+- (instancetype)init NS_UNAVAILABLE;
+
 - (instancetype)initWithArray:(NSArray *)data NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)initWithColor:(id)value;

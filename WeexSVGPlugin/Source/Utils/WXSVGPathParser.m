@@ -42,7 +42,7 @@
     CGMutablePathRef path = CGPathCreateMutable();
     NSArray<NSTextCheckingResult *>* results = [_pathRegularExpression matchesInString:_d options:0 range:NSMakeRange(0, [_d length])];
     
-    int count = [results count];
+    NSUInteger count = [results count];
     if (count) {
         NSUInteger i = 0;
 #define NEXT_VALUE [self getNextValue:results[i++]]
@@ -145,7 +145,7 @@
 {
     _pivotX = _penX = x;
     _pivotY = _penY = y;
-    CGPathMoveToPoint(path, nil, x, y);
+    CGPathMoveToPoint((CGMutablePathRef)path, nil, x, y);
 }
 
 - (void)line:(CGPathRef)path x:(double)x y:(double)y
@@ -157,7 +157,7 @@
     [self setPenDown];
     _pivotX = _penX = x;
     _pivotY = _penY = y;
-    CGPathAddLineToPoint(path, nil, x, y);
+    CGPathAddLineToPoint((CGMutablePathRef)path, nil, x, y);
 }
 
 - (void)curve:(CGPathRef)path c1x:(double)c1x c1y:(double)c1y c2x:(double)c2x c2y:(double)c2y ex:(double)ex ey:(double)ey
@@ -182,7 +182,7 @@
     [self setPenDown];
     _penX = ex;
     _penY = ey;
-    CGPathAddCurveToPoint(path, nil, c1x, c1y, c2x, c2y, ex, ey);
+    CGPathAddCurveToPoint((CGMutablePathRef)path, nil, c1x, c1y, c2x, c2y, ex, ey);
 }
 
 - (void)smoothCurve:(CGPathRef)path c1x:(double)c1x c1y:(double)c1y ex:(double)ex ey:(double)ey
@@ -243,8 +243,8 @@
     double tX = _penX;
     double tY = _penY;
     
-    ry = abs(ry == 0 ? (rx == 0 ? (y - tY) : rx) : ry);
-    rx = abs(rx == 0 ? (x - tX) : rx);
+    ry = fabs(ry == 0 ? (rx == 0 ? (y - tY) : rx) : ry);
+    rx = fabs(rx == 0 ? (x - tX) : rx);
     
     if (rx == 0 || ry == 0 || (x == tX && y == tY)) {
         [self lineTo:path x:x y:y];
@@ -306,7 +306,7 @@
     if (rx != ry || rad != 0) {
         [self arcToBezier:path cx:cx cy:cy rx:rx ry:ry sa:sa ea:ea clockwise:clockwise rad:rad];
     } else {
-        CGPathAddArc(path, nil, cx, cy, rx, sa, ea, !clockwise);
+        CGPathAddArc((CGMutablePathRef)path, nil, cx, cy, rx, sa, ea, !clockwise);
     }
 }
 
@@ -328,7 +328,7 @@
         arc -= M_PI * 2;
     }
     
-    int n = ceil(abs(arc / (M_PI / 2)));
+    int n = ceil(fabs(arc / (M_PI / 2)));
     
     double step = arc / n;
     double k = (4 / 3) * tan(step / 4);
@@ -347,7 +347,7 @@
         double cp2x = x + k * y;
         double cp2y = y - k * x;
         
-        CGPathAddCurveToPoint(path,
+        CGPathAddCurveToPoint((CGMutablePathRef)path,
                               nil,
                               cx + xx * cp1x + yx * cp1y,
                               cy + xy * cp1x + yy * cp1y,
@@ -364,7 +364,7 @@
         _penX = _penDownX;
         _penY = _penDownY;
         _penDownSet = NO;
-        CGPathCloseSubpath(path);
+        CGPathCloseSubpath((CGMutablePathRef)path);
     }
 }
 

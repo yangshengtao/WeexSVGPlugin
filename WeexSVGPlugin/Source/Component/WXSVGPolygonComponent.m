@@ -51,8 +51,8 @@
         [polygonArr addObject:tmpArr.firstObject];
     }
     NSUInteger count = polygonArr.count;
-    NSMutableArray *points = [[NSMutableArray alloc] initWithCapacity:polygonArr.count];
-    for (int idx = 0; idx < polygonArr.count; idx++) {
+    NSMutableArray *points = [[NSMutableArray alloc] initWithCapacity:count];
+    for (int idx = 0; idx < count; idx++) {
         NSArray *pointArr = [polygonArr[idx] componentsSeparatedByString:@","];
         CGPoint point = [WXConvert CGPoint:pointArr withScale:self.weexInstance.pixelScaleFactor];
         [points addObject:@[@(point.x),@(point.y)]];

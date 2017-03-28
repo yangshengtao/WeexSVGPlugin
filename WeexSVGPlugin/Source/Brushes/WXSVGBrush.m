@@ -12,12 +12,18 @@
 
 - (instancetype)initWithArray:(NSArray *)data
 {
-    return [super init];
+    if (self = [super init]) {
+        
+    }
+    return self;
 }
 
 - (instancetype)initWithColor:(id)value
 {
-    return [super init];
+    if (self = [super init]) {
+        
+    }
+    return self;
 }
 
 - (BOOL)applyFillColor:(CGContextRef)context opacity:(CGFloat)opacity

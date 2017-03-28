@@ -48,8 +48,8 @@
     }
     NSArray *tmpArr = [pointStr componentsSeparatedByString:@" "];
     NSUInteger count = tmpArr.count;
-    NSMutableArray *points = [[NSMutableArray alloc] initWithCapacity:tmpArr.count];
-    for (int idx = 0; idx < tmpArr.count; idx++) {
+    NSMutableArray *points = [[NSMutableArray alloc] initWithCapacity:count];
+    for (int idx = 0; idx < count; idx++) {
         NSArray *pointArr = [tmpArr[idx] componentsSeparatedByString:@","];
         CGPoint point = [WXConvert CGPoint:pointArr withScale:self.weexInstance.pixelScaleFactor];
         [points addObject:@[@(point.x),@(point.y)]];

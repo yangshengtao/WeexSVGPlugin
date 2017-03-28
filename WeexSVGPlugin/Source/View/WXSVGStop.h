@@ -11,7 +11,7 @@
 @interface WXSVGStop : WXSVGNode
 
 @property (nonatomic, copy) NSString *stopColor;
-@property (nonatomic, copy) NSString *offet;
-@property (nonatomic, assign) CGFloat stopOpacity;
+//@property (nonatomic, copy) NSString *offet;
+//@property (nonatomic, assign) CGFloat stopOpacity;
 
 @end
