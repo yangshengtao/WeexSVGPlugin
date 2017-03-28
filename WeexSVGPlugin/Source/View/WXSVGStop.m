@@ -11,15 +11,6 @@
 
 @implementation WXSVGStop
 
-- (void)setOffet:(NSString *)offet
-{
-    if (_offet == offet) {
-        return;
-    }
-    [self invalidate];
-    _offet = offet;
-}
-
 - (void)setStopColor:(NSString *)stopColor
 {
     if (_stopColor == stopColor) {
@@ -29,15 +20,6 @@
     _stopColor = stopColor;
     WXSVGNode *linearGradient = (WXSVGNode *)self.superview;
     [linearGradient addGradientStopColor:stopColor];
-}
-
-- (void)setStopOpacity:(CGFloat)stopOpacity
-{
-    if (_stopOpacity == stopOpacity) {
-        return;
-    }
-    [self invalidate];
-    _stopOpacity = stopOpacity;
 }
 
 @end

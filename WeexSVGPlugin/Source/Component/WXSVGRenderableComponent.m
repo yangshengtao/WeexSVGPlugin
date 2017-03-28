@@ -22,10 +22,6 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        //_strokeWidth = [attributes[@"strokeWidth"] floatValue];
-        //_stroke = [WXConvert WXSVGCGColor:self.attributes[@"stroke"]];
-        //_fill = [WXConvert WXSVGCGColor:self.attributes[@"fill"]];
-        //_strokeOpacity = [attributes[@"strokeOpacity"] floatValue];
     }
     
     return self;
@@ -47,13 +43,9 @@
         renderableView.strokeWidth = [self.attributes[@"strokeWidth"] floatValue];
     }
     if (self.attributes[@"stroke"]) {
-        //NSArray *rbga = [WXConvert colorWithHex:[_attributes[@"stroke"] integerValue]];
-        //renderableView.stroke = [WXConvert WXSVGBrush:rbga];
         renderableView.stroke = [WXConvert WXSVGCGColor:self.attributes[@"stroke"]];
     }
     if (self.attributes[@"fill"]) {
-        //NSArray *rbga = [WXConvert colorWithHex:[_attributes[@"stroke"] integerValue]];
-        //renderableView.fill = [WXConvert WXSVGBrush:rbga];
         renderableView.fill = [WXConvert WXSVGCGColor:self.attributes[@"fill"]];
     }
     renderableView.strokeMiterlimit = 4;

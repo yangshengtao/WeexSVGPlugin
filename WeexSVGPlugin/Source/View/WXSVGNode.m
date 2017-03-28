@@ -124,6 +124,24 @@
     }
 }
 
+- (void)setOffet:(NSString *)offet
+{
+    if (_offet == offet) {
+        return;
+    }
+    [self invalidate];
+    _offet = offet;
+}
+
+- (void)setStopOpacity:(CGFloat)stopOpacity
+{
+    if (_stopOpacity == stopOpacity) {
+        return;
+    }
+    [self invalidate];
+    _stopOpacity = stopOpacity;
+}
+
 - (void)mergeProperties:(__kindof WXSVGNode *)target mergeList:(NSArray<NSString *> *)mergeList
 {
     // abstract

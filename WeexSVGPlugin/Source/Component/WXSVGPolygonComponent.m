@@ -41,6 +41,10 @@
 
 - (void)formatterPointStr:(NSString *)pointStr
 {
+    if (!pointStr) {
+        self.points = [NSArray array];
+        return;
+    }
     NSArray *tmpArr = [pointStr componentsSeparatedByString:@" "];
     NSMutableArray *polygonArr = [NSMutableArray arrayWithArray:tmpArr];
     if (![tmpArr.lastObject isEqualToString:tmpArr.firstObject]) {

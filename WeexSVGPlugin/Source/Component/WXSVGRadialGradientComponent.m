@@ -33,35 +33,23 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        _name = attributes[@"id"];
-        _fx = attributes[@"fx"];
-        _fy = attributes[@"fy"];
-        _rx = attributes[@"r"];
-        _ry = attributes[@"r"];
-        _cx = attributes[@"cx"];
-        _cy = attributes[@"cy"];
+        _name = attributes[@"id"] ? : @"";
+        _fx = attributes[@"fx"] ? : @"0";
+        _fy = attributes[@"fy"] ? : @"0";
+        _rx = attributes[@"r"] ? : @"0";
+        _ry = attributes[@"r"] ? : @"0";
+        _cx = attributes[@"cx"] ? : @"0";
+        _cy = attributes[@"cy"] ? : @"0";
     }
     
     return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    WXSVGRadialGradient *radialView = (WXSVGRadialGradient *)self.view;
-    _radialView.name = _name;
-    radialView.fx = _fx;
-    radialView.fy = _fy;
-    radialView.rx = _rx;
-    radialView.ry = _ry;
-    radialView.cx = _cx;
-    radialView.cy = _cy;
 }
 
 - (WXSVGRadialGradient *)node
 {
     if (!_radialView) {
          _radialView = [WXSVGRadialGradient new];
+        _radialView.name = _name;
         _radialView.fx = [self formatterPoint:_fx];
         _radialView.fy = [self formatterPoint:_fy];
         _radialView.rx = [self formatterPoint:_rx];

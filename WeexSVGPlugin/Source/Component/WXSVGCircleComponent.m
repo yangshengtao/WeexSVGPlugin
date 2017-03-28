@@ -27,9 +27,9 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        _cx = attributes[@"cx"];
-        _cy = attributes[@"cy"];
-        _r = attributes[@"r"];
+        _cx = attributes[@"cx"] ? : @"0";
+        _cy = attributes[@"cy"] ? : @"0";
+        _r = attributes[@"r"] ? : @"0";
     }
     
     return self;

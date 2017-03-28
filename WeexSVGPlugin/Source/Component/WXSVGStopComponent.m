@@ -21,7 +21,6 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        //_strokeWidth = [attributes[@"strokeWidth"] floatValue];
         _stopColor = attributes[@"stopColor"];
         _offet = attributes[@"offset"];
         _stopOpacity = [attributes[@"stopOpacity"] floatValue];
@@ -32,11 +31,6 @@
 
 - (WXSVGNode *)node
 {
-    /*WXSVGStop *stopView = [WXSVGStop new];
-    stopView.stopColor = _stopColor;
-    stopView.stopOpacity = _stopOpacity;
-    stopView.offet = _offet;
-    return stopView;*/
     return [WXSVGStop new];
 }
 
@@ -46,9 +40,6 @@
     WXSVGNodeComponent *component = (WXSVGNodeComponent *)self.supercomponent;
     WXSVGNode *linearGradient = (WXSVGNode *)[component node];
     [linearGradient addGradientStopColor:_stopColor];
-    //stopView.stopColor = _stopColor;
-    //stopView.stopOpacity = _stopOpacity;
-    //stopView.offet = _offet;
 }
 
 @end

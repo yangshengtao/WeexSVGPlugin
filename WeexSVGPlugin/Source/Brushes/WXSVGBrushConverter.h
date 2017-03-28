@@ -19,6 +19,8 @@ typedef enum {
 
 @property (nonatomic, copy) NSArray<NSString *> *points;
 @property (nonatomic, copy) NSArray<NSNumber *> *colors;
+@property (nonatomic, assign) CGFloat stopOpacity;
+@property (nonatomic, copy) NSString *offet;
 @property (nonatomic, assign) WXSVGBrushType type;
 
 - (void) drawLinearGradient:(CGContextRef)context;

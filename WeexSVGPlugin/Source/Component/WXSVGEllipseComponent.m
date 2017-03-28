@@ -28,10 +28,10 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        _cx = attributes[@"cx"];
-        _cy = attributes[@"cy"];
-        _rx = attributes[@"rx"];
-        _ry = attributes[@"ry"];
+        _cx = attributes[@"cx"] ? : @"0";
+        _cy = attributes[@"cy"] ? : @"0";
+        _rx = attributes[@"rx"] ? : @"0";
+        _ry = attributes[@"ry"] ? : @"0";
     }
     
     return self;

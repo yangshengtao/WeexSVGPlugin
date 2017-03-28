@@ -32,11 +32,11 @@
 {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
     if (self) {
-        _name = attributes[@"id"];
-        _x1 = attributes[@"x1"];
-        _x2 = attributes[@"x2"];
-        _y1 = attributes[@"y1"];
-        _y2 = attributes[@"y2"];
+        _name = attributes[@"id"] ? : @"";
+        _x1 = attributes[@"x1"] ? : @"0";
+        _x2 = attributes[@"x2"] ? : @"0";
+        _y1 = attributes[@"y1"] ? : @"0";
+        _y2 = attributes[@"y2"] ? : @"0";
     }
     return self;
 }

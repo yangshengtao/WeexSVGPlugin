@@ -31,6 +31,8 @@ typedef struct {
 @property (nonatomic, assign) BOOL active;
 
 @property (nonatomic, strong) NSMutableArray *gradient;
+@property (nonatomic, copy) NSString *offet;
+@property (nonatomic, assign) CGFloat stopOpacity;
 
 - (void)invalidate;
 

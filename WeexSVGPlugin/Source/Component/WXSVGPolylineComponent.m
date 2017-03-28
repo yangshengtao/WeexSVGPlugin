@@ -42,6 +42,10 @@
 
 - (void)formatterPointStr:(NSString *)pointStr
 {
+    if (!pointStr) {
+        self.points = [NSArray array];
+        return;
+    }
     NSArray *tmpArr = [pointStr componentsSeparatedByString:@" "];
     NSUInteger count = tmpArr.count;
     NSMutableArray *points = [[NSMutableArray alloc] initWithCapacity:tmpArr.count];
