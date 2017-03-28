@@ -58,6 +58,9 @@
 
 - (void)defineBrushConverter:(WXSVGBrushConverter *)brushConverter brushConverterRef:(NSString *)brushConverterRef
 {
+    if (!brushConverterRef) {
+        return;
+    }
     if (!brushConverters) {
         brushConverters = [[NSMutableDictionary alloc] init];
     }
