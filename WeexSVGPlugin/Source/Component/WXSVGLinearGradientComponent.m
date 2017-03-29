@@ -55,5 +55,29 @@
     return _linearView;
 }
 
-
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    if (attributes[@"id"]) {
+        _name = attributes[@"id"];
+        _linearView.name = _name;
+    }
+    if (attributes[@"x1"]) {
+        _x1 = attributes[@"x1"];
+        _linearView.x1 = [self formatterPoint:_x1];
+    }
+    if (attributes[@"x2"]) {
+        _x2 = attributes[@"x2"];
+        _linearView.x2 = [self formatterPoint:_x2];
+    }
+    if (attributes[@"y1"]) {
+        _y1 = attributes[@"y1"];
+        _linearView.y1 = [self formatterPoint:_y1];
+    }
+    if (attributes[@"y2"]) {
+        _y2 = attributes[@"y2"];
+        _linearView.y2 = [self formatterPoint:_y2];
+    }
+    
+    [super updateAttributes:attributes];
+}
 @end

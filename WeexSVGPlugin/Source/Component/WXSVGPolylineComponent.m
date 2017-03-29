@@ -56,5 +56,11 @@
     }
     _points = [NSArray arrayWithArray:points];
 }
+    
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    [self formatterPointStr:attributes[@"points"]];
+    [super updateAttributes:attributes];
+}
 
 @end

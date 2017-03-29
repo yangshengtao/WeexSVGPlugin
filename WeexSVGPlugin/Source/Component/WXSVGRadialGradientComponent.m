@@ -60,5 +60,38 @@
     }
     return _radialView;
 }
+    
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    if (_name = attributes[@"id"]) {
+        _name = attributes[@"id"];
+        _radialView.name = _name;
+    }
+    if (attributes[@"fx"]) {
+        _fx = attributes[@"fx"];
+        _radialView.fx = [self formatterPoint:_fx];
+    }
+    if (attributes[@"fy"]) {
+        _fy = attributes[@"fy"];
+        _radialView.fy = [self formatterPoint:_fy];
+    }
+    if (attributes[@"rx"]) {
+        _rx = attributes[@"rx"];
+        _radialView.rx = [self formatterPoint:_rx];
+    }
+    if (attributes[@"ry"]) {
+        _ry = attributes[@"fy"];
+        _radialView.ry = [self formatterPoint:_ry];
+    }
+    if (attributes[@"cx"]) {
+        _cx = attributes[@"cx"];
+        _radialView.cx = [self formatterPoint:_cx];
+    }
+    if (attributes[@"cy"]) {
+        _cy = attributes[@"cy"];
+        _radialView.cy = [self formatterPoint:_cy];
+    }
+    [super updateAttributes:attributes];
+}
 
 @end

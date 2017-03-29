@@ -52,5 +52,21 @@
     [super syncViewAttributes:view];
 
 }
+    
+    
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    WXSVGRenderable *renderableView = (WXSVGRenderable *)self.view;
+    if (attributes[@"strokeWidth"]) {
+        renderableView.strokeWidth = [self.attributes[@"strokeWidth"] floatValue];
+    }
+    if (attributes[@"stroke"]) {
+        renderableView.stroke = [WXConvert WXSVGCGColor:self.attributes[@"stroke"]];
+    }
+    if (attributes[@"fill"]) {
+        renderableView.fill = [WXConvert WXSVGCGColor:self.attributes[@"fill"]];
+    }
+}
+
 
 @end

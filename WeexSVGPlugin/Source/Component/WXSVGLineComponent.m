@@ -51,5 +51,27 @@
     [self syncViewAttributes:lineView];
     return lineView;
 }
+    
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    WXSVGLine *lineView = (WXSVGLine *)self.view;
+    if (attributes[@"x1"]) {
+        _x1 = attributes[@"x1"];
+        lineView.x1 = [WXConvert WXPixelType:_x1 scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"x2"]) {
+        _x2 = attributes[@"x2"];
+        lineView.x2 = [WXConvert WXPixelType:_x2 scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"y1"]) {
+        _y1 = attributes[@"y1"];
+        lineView.y1 = [WXConvert WXPixelType:_y1 scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"y2"]) {
+        _y2 = attributes[@"y2"];
+        lineView.y2 = [WXConvert WXPixelType:_y2 scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    [super updateAttributes:attributes];
+}
 
 @end

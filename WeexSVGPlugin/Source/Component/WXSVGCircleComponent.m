@@ -46,5 +46,24 @@
     [self syncViewAttributes:circleView];
     return circleView;
 }
+    
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    WXSVGCircle *circleView = (WXSVGCircle *)self.view;
+    if (attributes[@"cx"]) {
+        _cx = attributes[@"cx"];
+        circleView.cx = [WXConvert WXPixelType:_cx scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"cy"]) {
+        _cy = attributes[@"cy"];
+        circleView.cy = [WXConvert WXPixelType:_cy scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"r"]) {
+        _r = attributes[@"r"];
+        CGFloat r = [WXConvert WXPixelType:_r scaleFactor:self.weexInstance.pixelScaleFactor];
+        circleView.r = [NSString stringWithFormat:@"%f",r];
+    }
+    [super updateAttributes:attributes];
+}
 
 @end

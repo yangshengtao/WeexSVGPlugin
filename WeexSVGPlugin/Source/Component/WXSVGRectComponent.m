@@ -53,5 +53,35 @@
     [self syncViewAttributes:rectView];
     return rectView;
 }
+    
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    WXSVGRect *rectView = (WXSVGRect *)self.view;
+    if (attributes[@"x"]) {
+        _x = attributes[@"x"];
+        rectView.x = [WXConvert WXPixelType:_x scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"y"]) {
+        _y = attributes[@"y"];
+        rectView.y = [WXConvert WXPixelType:_y scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"width"]) {
+        _width = attributes[@"width"];
+        rectView.width = [WXConvert WXPixelType:_width scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"height"]) {
+        _height = attributes[@"height"];
+        rectView.height = [WXConvert WXPixelType:_height scaleFactor:self.weexInstance.pixelScaleFactor];;
+    }
+    if (attributes[@"rx"]) {
+        _rx = attributes[@"rx"];
+        rectView.rx = [WXConvert WXPixelType:_rx scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    if (attributes[@"ry"]) {
+        _ry = attributes[@"ry"];
+        rectView.ry = [WXConvert WXPixelType:_ry scaleFactor:self.weexInstance.pixelScaleFactor];
+    }
+    [super updateAttributes:attributes];
+}
 
 @end

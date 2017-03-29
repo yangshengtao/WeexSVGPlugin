@@ -43,5 +43,13 @@
     return pathView;
 }
 
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    WXSVGPath *pathView = (WXSVGPath *)self.view;
+    if (attributes[@"d"]) {
+        pathView.d = [WXConvert CGPath:_d withScale:self.weexInstance.pixelScaleFactor];
+    }
+    [super updateAttributes:attributes];
+}
 
 @end
