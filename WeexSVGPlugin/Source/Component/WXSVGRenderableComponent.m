@@ -63,7 +63,7 @@
     if (attributes[@"stroke"]) {
         renderableView.stroke = [WXConvert WXSVGCGColor:self.attributes[@"stroke"]];
     }
-    if (attributes[@"fill"]) {
+    if (attributes[@"fill"] && ![attributes[@"fill"] isEqualToString:@"none"]) {
         renderableView.fill = [WXConvert WXSVGCGColor:self.attributes[@"fill"]];
     }
 }
