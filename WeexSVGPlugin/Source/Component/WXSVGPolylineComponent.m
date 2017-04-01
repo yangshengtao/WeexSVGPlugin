@@ -60,6 +60,10 @@
 - (void)updateAttributes:(NSDictionary *)attributes
 {
     [self formatterPointStr:attributes[@"points"]];
+    if (attributes[@"points"]) {
+        WXSVGPolyline *polylineView = (WXSVGPolyline *)self.view;
+        polylineView.points = _points;
+    }
     [super updateAttributes:attributes];
 }
 

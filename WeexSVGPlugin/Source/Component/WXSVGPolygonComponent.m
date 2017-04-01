@@ -63,6 +63,10 @@
 - (void)updateAttributes:(NSDictionary *)attributes
 {
     [self formatterPointStr:attributes[@"points"]];
+    if (attributes[@"points"]) {
+        WXSVGPolygon *polygonView = (WXSVGPolygon *)self.view;
+        polygonView.points = self.points;
+    }
     [super updateAttributes:attributes];
 }
 @end

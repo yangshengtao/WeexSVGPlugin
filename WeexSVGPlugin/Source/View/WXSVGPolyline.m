@@ -16,6 +16,7 @@
     if (points == _points) {
         return;
     }
+    [self invalidate];
     _points = points;
 }
 
